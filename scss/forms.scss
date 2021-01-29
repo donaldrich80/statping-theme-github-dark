@@ -1,5 +1,5 @@
-@import 'variables';
-@import 'mixin';
+@import "variables";
+@import "mixin";
 
 .copy-btn {
   position: absolute;
@@ -37,7 +37,7 @@
 
 /* The slider itself */
 .slider {
-  -webkit-appearance: none;  /* Override default CSS styles */
+  -webkit-appearance: none; /* Override default CSS styles */
   appearance: none;
   background: $midnight-color; /* Grey background */
   height: 5px; /* Specified height */
@@ -152,7 +152,7 @@ input.inputTags-field:focus {
 .switch input + label::before,
 .switch input + label::after {
   bottom: 0;
-  content: '';
+  content: "";
   display: block;
   left: 0;
   position: absolute;
@@ -284,7 +284,9 @@ input.inputTags-field:focus {
 .CodeMirror-focused {
   /* Bootstrap Settings */
   border-color: #66afe9;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow:
+    inset 0 1px 1px rgba(0, 0, 0, 0.075),
+    0 0 8px rgba(102, 175, 233, 0.6);
   outline: 0;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
 }
