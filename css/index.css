@@ -82,13 +82,16 @@ A {
 
 .table td {
   color: #e1e4e8;
-  border-top: 1px solid black !important; }
+  border-top: 1px solid #161B22 !important; }
 
 .nav-pills {
   border-radius: 0.2rem; }
 
+.nav-pills A {
+  border: 1px solid #21262D !important; }
+
 .nav-link {
-  color: #8B949E; }
+  color: #d1d5da; }
 
 .form-control {
   border-radius: 0.2rem; }
@@ -172,8 +175,7 @@ A {
   background-color: #0D1117; }
 
 .footer {
-  text-decoration: none;
-  margin-top: 20px; }
+  text-decoration: none; }
 
 .footer .links {
   color: #b0b0b0;
@@ -259,6 +261,9 @@ A {
 .btn-xs {
   font-size: 8pt;
   padding: 2px 6px; }
+
+.table {
+  color: #e1e4e8 !important; }
 
 .bg-white {
   background-color: #161B22; }
@@ -640,7 +645,7 @@ A {
 
 .btn-danger {
   color: #F85149 !important;
-  background-color: #484F58 !important;
+  background-color: #0D1117 !important;
   border: 1px solid #21262D; }
   .btn-danger.dyn-dark {
     background-color: #b02220 !important;
@@ -648,6 +653,11 @@ A {
   .btn-danger.dyn-light {
     background-color: #e36967 !important;
     border-color: #e77e7c !important; }
+
+.btn-light {
+  color: #d1d5da !important;
+  background-color: #0D1117 !important;
+  border: 1px solid #21262D; }
 
 .btn-danger:hover {
   background-color: #DA3633 !important;
@@ -714,6 +724,11 @@ A {
   float: right;
   margin: -1px 0px 0px 0px;
   display: block; }
+
+.text-danger {
+  background-color: #36191C !important;
+  color: #DA3633 !important;
+  border: 1px solid #DA3633 !important; }
 
 #start_container {
   position: absolute;
@@ -818,7 +833,7 @@ A {
   /* Set a specific slider handle width */
   height: 20px;
   /* Slider handle height */
-  background: #58A6FF;
+  background: #d1d5da;
   /* Green background */
   cursor: pointer;
   /* Cursor on hover */ }
@@ -828,7 +843,7 @@ A {
   /* Set a specific slider handle width */
   height: 15px;
   /* Slider handle height */
-  background: #58A6FF;
+  background: #d1d5da;
   /* Green background */
   cursor: pointer;
   /* Cursor on hover */ }
@@ -1022,7 +1037,7 @@ input.inputTags-field:focus {
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
   background-color: #2D9C42;
-  border: 1px solid #007bff; }
+  border: 1px solid #007bff !important; }
 
 .nav-pills A {
   color: #e1e4e8; }
