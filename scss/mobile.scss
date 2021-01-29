@@ -46,9 +46,9 @@
   }
 
   .container {
+    min-height: 960pt;
     padding: 0 !important;
     padding-top: 0 !important;
-    min-height: 960pt;
   }
 
   .group_header {
@@ -56,33 +56,33 @@
   }
 
   .navbar {
+    box-shadow: 1px 10px 20px 0;
+    color: rgba(0, 0, 0, 0.2);
+    height: 55pt;
+    margin-bottom: 20pt;
     margin-left: 0;
     margin-top: 0;
     width: 100%;
-    box-shadow: 1px 10px 20px 0;
-    height: 55pt;
-    color: rgba(0, 0, 0, 0.2);
-    margin-bottom: 20pt;
   }
 
   .navbar-collapse {
-    z-index: 999999;
     background-color: #0d1117;
-    width: 100%;
-    padding: 10pt 15pt;
     left: 0;
-    top: 75px;
+    padding: 10pt 15pt;
     position: absolute;
+    top: 75px;
+    width: 100%;
+    z-index: 999999;
   }
 
   .btn-sm {
-    line-height: 1.3;
     font-size: 0.75rem;
+    line-height: 1.3;
   }
 
   .badge {
-    padding-top: 2px;
     padding-bottom: 3px;
+    padding-top: 2px;
   }
 
   .switch label {
@@ -95,11 +95,11 @@
   }
 
   .card {
+    background-color: $sm-service-background;
     border: 0;
     border-radius: $sm-border-radius;
-    padding: $sm-padding;
-    background-color: $sm-service-background;
     box-shadow: $mobile-card-shadow;
+    padding: $sm-padding;
   }
 
   .card-footer {
@@ -116,8 +116,8 @@
   }
 
   .stats_area {
-    margin-top: 1.5rem !important;
     margin-bottom: 1.5rem !important;
+    margin-top: 1.5rem !important;
   }
 
   .stats_area .col-4 {
@@ -130,8 +130,8 @@
   }
 
   .list-group-item {
-    border-top: 1px solid #e4e4e4;
     border: 0;
+    border-top: 1px solid #e4e4e4;
   }
 
   .list-group-item:first-child {
@@ -140,8 +140,8 @@
   }
 
   .list-group-item:last-child {
-    border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
   }
 
   .list-group-item p {

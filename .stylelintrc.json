@@ -1,5 +1,5 @@
 {
-  "extends": "stylelint-config-standard",
+  "extends": ["stylelint-config-standard","stylelint-config-idiomatic-order"],
 	"plugins": [
 		"stylelint-order"
 	],
@@ -13,7 +13,7 @@
 			"height"
 		],
     "no-descending-specificity": null,
-    "no-missing-end-of-source-newline": null,
+    "order/properties-alphabetical-order": true,
     "at-rule-no-unknown": null
 	}
 }
