@@ -52,18 +52,18 @@ a {
 
 .day-success {
   background-color: $day-success-background;
-}
 
-.day-success:hover {
-  background-color: lighten($day-success-background, 2%) !important;
+  &:hover {
+    background-color: lighten($day-success-background, 2%) !important;
+  }
 }
 
 .day-error {
   background-color: $day-error-background;
-}
 
-.day-error:hover {
-  background-color: lighten($day-error-background, 2%) !important;
+  &:hover {
+    background-color: lighten($day-error-background, 2%) !important;
+  }
 }
 
 .contain-card {
@@ -96,10 +96,10 @@ a {
 
 .nav-pills {
   border-radius: $global-border-radius;
-}
 
-.nav-pills a {
-  border: $card-border !important;
+  & a {
+    border: $card-border !important;
+  }
 }
 
 .nav-link {
@@ -127,11 +127,11 @@ a {
 .card-body {
   background-color: $background-color;
   overflow: hidden;
-}
 
-.card-body h4 a {
-  color: $service-title;
-  text-decoration: none;
+  & h4 a {
+    color: $service-title;
+    text-decoration: none;
+  }
 }
 
 .card-title a {
@@ -142,16 +142,16 @@ a {
 .dashboard_card {
   background-color: $group-list-background;
   box-shadow: rgba(0, 0, 0, 0.05) 0 2px 3px 1px;
-}
 
-.dashboard_card:hover {
-  background-color: lighten($container-color, 20%) !important;
-  border: 1px solid $white-color;
-  box-shadow: rgba(0, 0, 0, 0.05) 0 1px 5px 3px;
-  -webkit-transition-duration: 300ms;
-  -moz-transition-duration: 300ms;
-  -o-transition-duration: 300ms;
-  transition-duration: 300ms;
+  &:hover {
+    background-color: lighten($container-color, 20%) !important;
+    border: 1px solid $white-color;
+    box-shadow: rgba(0, 0, 0, 0.05) 0 1px 5px 3px;
+    -webkit-transition-duration: 300ms;
+    -moz-transition-duration: 300ms;
+    -o-transition-duration: 300ms;
+    transition-duration: 300ms;
+  }
 }
 
 .list-group-item-old {
@@ -164,17 +164,17 @@ a {
   background-color: #090d13;
   border: $card-border;
   min-height: 85pt;
-}
 
-.list-group-item:hover {
-  background-color: darken($container-color, 2%) !important;
-  border-color: darken(#21262d, 2%) !important;
-  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 6px 1px;
-  color: $text-color;
-  -webkit-transition-duration: 1000ms;
-  -moz-transition-duration: 1000ms;
-  -o-transition-duration: 1000ms;
-  transition-duration: 1000ms;
+  &:hover {
+    background-color: darken($container-color, 2%) !important;
+    border-color: darken(#21262d, 2%) !important;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 6px 1px;
+    color: $text-color;
+    -webkit-transition-duration: 1000ms;
+    -moz-transition-duration: 1000ms;
+    -o-transition-duration: 1000ms;
+    transition-duration: 1000ms;
+  }
 }
 
 .list-group-item-action {
@@ -206,25 +206,25 @@ a {
 
 .footer {
   text-decoration: none;
-}
 
-.footer .links {
-  color: $footer-text-color;
-  text-decoration: none;
-}
+  & .links {
+    color: $footer-text-color;
+    text-decoration: none;
 
-.footer .links:hover {
-  color: #8c8c8c;
-}
+    &:hover {
+      color: #8c8c8c;
+    }
+  }
 
-.footer .statping {
-  color: lighten($footer-text-color, 10%);
-  text-decoration: none;
-}
+  & .statping {
+    color: lighten($footer-text-color, 10%);
+    text-decoration: none;
 
-.footer .statping:hover {
-  color: lighten($footer-text-color, 0%);
-  text-decoration: none;
+    &:hover {
+      color: lighten($footer-text-color, 0%);
+      text-decoration: none;
+    }
+  }
 }
 
 .no-select {
@@ -243,27 +243,27 @@ a {
   margin: 10px 20px;
   overflow: auto;
   padding: 10px 0;
-}
 
-.dates div {
-  float: left;
-  position: relative;
-  text-align: center;
-  width: 50%;
-}
+  & div {
+    float: left;
+    position: relative;
+    text-align: center;
+    width: 50%;
+  }
 
-.dates strong {
-  color: darken($card-background, 20%);
-  display: block;
-  font-size: 20px;
-  font-weight: 700;
-}
+  & strong {
+    color: darken($card-background, 20%);
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+  }
 
-.dates span {
-  background: darken($card-background, 10%);
-  height: 60px;
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 1px;
+  & span {
+    background: darken($card-background, 10%);
+    height: 60px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1px;
+  }
 }

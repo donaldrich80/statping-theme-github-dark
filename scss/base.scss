@@ -143,12 +143,12 @@
   padding: 0;
   text-align: left;
   width: 200px;
-}
 
-.chartmarker span {
-  color: red;
-  display: block;
-  font-size: 8pt;
+  & span {
+    color: red;
+    display: block;
+    font-size: 8pt;
+  }
 }
 
 .apexcharts-tooltip {
@@ -191,15 +191,15 @@
   height: 20px;
   margin-right: 2px;
   max-width: 30px;
-}
 
-.service_day span {
-  color: blue;
-  display: flex;
-  font-size: 6pt;
-  justify-content: center;
-  margin: auto;
-  margin-top: 4px;
+  & span {
+    color: blue;
+    display: flex;
+    font-size: 6pt;
+    justify-content: center;
+    margin: auto;
+    margin-top: 4px;
+  }
 }
 
 .service_scale {
@@ -272,11 +272,11 @@
   margin-right: 0 !important;
   padding: 15px 10px;
   width: 100%;
-}
 
-.lower_canvas span {
-  color: $service-description-color;
-  font-size: 1rem;
+  & span {
+    color: $service-description-color;
+    font-size: 1rem;
+  }
 }
 
 .font-0 {
@@ -319,36 +319,36 @@
   background-color: #0d1117 !important;
   border: $card-border !important;
   color: #e3b341 !important;
-}
 
-.incident:hover {
-  background-color: #e3b341 !important;
-  border: $card-border !important;
-  color: $white-color !important;
+  &:hover {
+    background-color: #e3b341 !important;
+    border: $card-border !important;
+    color: $white-color !important;
+  }
 }
 
 .checkins {
   background-color: #0d1117 !important;
   border: $card-border !important;
   color: $success-color !important;
-}
 
-.checkins:hover {
-  background-color: $success-color-hover !important;
-  border: $card-border !important;
-  color: $white-color !important;
+  &:hover {
+    background-color: $success-color-hover !important;
+    border: $card-border !important;
+    color: $white-color !important;
+  }
 }
 
 .failures {
   background-color: #0d1117 !important;
   border: $card-border !important;
   color: $danger-color-text !important;
-}
 
-.failures:hover {
-  background-color: $danger-color !important;
-  border: $card-border !important;
-  color: $white-color !important;
+  &:hover {
+    background-color: $danger-color !important;
+    border: $card-border !important;
+    color: $white-color !important;
+  }
 }
 
 .subtitle {
@@ -401,23 +401,23 @@
 .no-decoration {
   color: #58a6ff;
   text-decoration: none;
-}
 
-.no-decoration:hover {
-  color: #58a6ff;
-  text-decoration: none;
+  &:hover {
+    color: #58a6ff;
+    text-decoration: none;
+  }
 }
 
 .btn-white {
   background-color: #161b22;
   border: 1px solid #0d1117;
   color: #767676;
-}
 
-.btn-white:hover {
-  background-color: #0d1117;
-  border: 1px solid #0d1117;
-  color: $success-color;
+  &:hover {
+    background-color: #0d1117;
+    border: 1px solid #0d1117;
+    color: $success-color;
+  }
 }
 
 .braker {
@@ -473,12 +473,12 @@
   background-color: $success-color;
   border-color: $success-color-hover;
   color: $white-color;
-}
 
-.btn-primary:hover {
-  background-color: $success-color-hover !important;
-  border: 1px solid $success-color;
-  color: $white-color !important;
+  &:hover {
+    background-color: $success-color-hover !important;
+    border: 1px solid $success-color;
+    color: $white-color !important;
+  }
 }
 
 .btn-success {

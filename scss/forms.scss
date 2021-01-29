@@ -5,29 +5,29 @@
   position: absolute;
   right: 0;
   z-index: 995;
-}
 
-.copy-btn button {
-  background-color: $dark-blue;
-  border: 1px solid #a7a7a7;
-  border-radius: 4px !important;
-  color: $white-color;
-  font-size: 6pt;
-  height: 26px;
-  margin: 6px;
-  padding: 5px 7px;
+  & button {
+    background-color: $dark-blue;
+    border: 1px solid #a7a7a7;
+    border-radius: 4px !important;
+    color: $white-color;
+    font-size: 6pt;
+    height: 26px;
+    margin: 6px;
+    padding: 5px 7px;
+  }
 }
 
 .form-control {
   background-color: $input-background;
   border: $card-border;
   color: $input-color;
-}
 
-.form-control:focus {
-  background-color: lighten($input-background, 4%) !important;
-  border: 1px solid $dark-blue;
-  color: $text-color;
+  &:focus {
+    background-color: lighten($input-background, 4%) !important;
+    border: 1px solid $dark-blue;
+    color: $text-color;
+  }
 }
 
 .form-control[readonly] {
@@ -109,73 +109,73 @@ input.inputTags-field:focus {
   font-size: 10pt;
   margin-right: 5px;
   padding: 5px 8px;
-}
 
-.inputTags-item .close-item {
-  cursor: pointer;
-  font-size: 13pt;
-  font-weight: bold;
-  margin-left: 6px;
+  & .close-item {
+    cursor: pointer;
+    font-size: 13pt;
+    font-weight: bold;
+    margin-left: 6px;
+  }
 }
 
 .switch {
   font-size: 1rem;
   position: relative;
-}
 
-.switch input {
-  background: none;
-  border: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-}
+  & input {
+    background: none;
+    border: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
 
-.switch input + label {
-  border-radius: calc(2.375rem * 0.8);
-  cursor: pointer;
-  display: inline-block;
-  height: calc(2.375rem * 0.8);
-  line-height: calc(2.375rem * 0.8);
-  min-width: calc(calc(2.375rem * 0.8) * 2);
-  outline: none;
-  position: relative;
-  text-indent: calc(calc(calc(2.375rem * 0.8) * 2) + 0.5rem);
-  user-select: none;
-  vertical-align: middle;
-}
+    & + label {
+      border-radius: calc(2.375rem * 0.8);
+      cursor: pointer;
+      display: inline-block;
+      height: calc(2.375rem * 0.8);
+      line-height: calc(2.375rem * 0.8);
+      min-width: calc(calc(2.375rem * 0.8) * 2);
+      outline: none;
+      position: relative;
+      text-indent: calc(calc(calc(2.375rem * 0.8) * 2) + 0.5rem);
+      user-select: none;
+      vertical-align: middle;
 
-.switch input + label::before,
-.switch input + label::after {
-  bottom: 0;
-  content: "";
-  display: block;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: calc(calc(2.375rem * 0.8) * 2);
-}
+      &::before,
+      &::after {
+        bottom: 0;
+        content: "";
+        display: block;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: calc(calc(2.375rem * 0.8) * 2);
+      }
 
-.switch input + label::before {
-  background-color: $midnight-color;
-  border: $card-border;
-  border-radius: calc(2.375rem * 0.8);
-  right: 0;
-  transition: 0.2s all;
-}
+      &::before {
+        background-color: $midnight-color;
+        border: $card-border;
+        border-radius: calc(2.375rem * 0.8);
+        right: 0;
+        transition: 0.2s all;
+      }
 
-.switch input + label::after {
-  background-color: $white-color;
-  border-radius: 50%;
-  height: calc(calc(2.375rem * 0.8) - calc(2px * 2));
-  left: 2px;
-  top: 2px;
-  transition: 0.2s all;
-  width: calc(calc(2.375rem * 0.8) - calc(2px * 2));
+      &::after {
+        background-color: $white-color;
+        border-radius: 50%;
+        height: calc(calc(2.375rem * 0.8) - calc(2px * 2));
+        left: 2px;
+        top: 2px;
+        transition: 0.2s all;
+        width: calc(calc(2.375rem * 0.8) - calc(2px * 2));
+      }
+    }
+  }
 }
 
 .switch-rd-gr input:checked + label::before {
@@ -197,58 +197,58 @@ input.inputTags-field:focus {
 .switch input:disabled + label {
   color: darkgray;
   cursor: not-allowed;
-}
 
-.switch input:disabled + label::before {
-  background-color: black;
+  &::before {
+    background-color: black;
+  }
 }
 
 .switch.switch-sm {
   font-size: 0.875rem;
-}
 
-.switch.switch-sm input + label {
-  height: calc(1.9375rem * 0.8);
-  line-height: calc(1.9375rem * 0.8);
-  min-width: calc(calc(1.9375rem * 0.8) * 2);
-  text-indent: calc(calc(calc(1.9375rem * 0.8) * 2) + 0.5rem);
-}
+  & input + label {
+    height: calc(1.9375rem * 0.8);
+    line-height: calc(1.9375rem * 0.8);
+    min-width: calc(calc(1.9375rem * 0.8) * 2);
+    text-indent: calc(calc(calc(1.9375rem * 0.8) * 2) + 0.5rem);
 
-.switch.switch-sm input + label::before {
-  width: calc(calc(1.9375rem * 0.8) * 2);
-}
+    &::before {
+      width: calc(calc(1.9375rem * 0.8) * 2);
+    }
 
-.switch.switch-sm input + label::after {
-  height: calc(calc(1.9375rem * 0.8) - calc(2px * 2));
-  width: calc(calc(1.9375rem * 0.8) - calc(2px * 2));
-}
+    &::after {
+      height: calc(calc(1.9375rem * 0.8) - calc(2px * 2));
+      width: calc(calc(1.9375rem * 0.8) - calc(2px * 2));
+    }
+  }
 
-.switch.switch-sm input:checked + label::after {
-  margin-left: calc(1.9375rem * 0.8);
+  & input:checked + label::after {
+    margin-left: calc(1.9375rem * 0.8);
+  }
 }
 
 .switch.switch-lg {
   font-size: 1.25rem;
-}
 
-.switch.switch-lg input + label {
-  height: calc(3rem * 0.8);
-  line-height: calc(3rem * 0.8);
-  min-width: calc(calc(3rem * 0.8) * 2);
-  text-indent: calc(calc(calc(3rem * 0.8) * 2) + 0.5rem);
-}
+  & input + label {
+    height: calc(3rem * 0.8);
+    line-height: calc(3rem * 0.8);
+    min-width: calc(calc(3rem * 0.8) * 2);
+    text-indent: calc(calc(calc(3rem * 0.8) * 2) + 0.5rem);
 
-.switch.switch-lg input + label::before {
-  width: calc(calc(3rem * 0.8) * 2);
-}
+    &::before {
+      width: calc(calc(3rem * 0.8) * 2);
+    }
 
-.switch.switch-lg input + label::after {
-  height: calc(calc(3rem * 0.8) - calc(2px * 2));
-  width: calc(calc(3rem * 0.8) - calc(2px * 2));
-}
+    &::after {
+      height: calc(calc(3rem * 0.8) - calc(2px * 2));
+      width: calc(calc(3rem * 0.8) - calc(2px * 2));
+    }
+  }
 
-.switch.switch-lg input:checked + label::after {
-  margin-left: calc(3rem * 0.8);
+  & input:checked + label::after {
+    margin-left: calc(3rem * 0.8);
+  }
 }
 
 .switch + .switch {
@@ -284,8 +284,7 @@ input.inputTags-field:focus {
 .CodeMirror-focused {
   /* Bootstrap Settings */
   border-color: #66afe9;
-  box-shadow:
-    inset 0 1px 1px rgba(0, 0, 0, 0.075),
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
     0 0 8px rgba(102, 175, 233, 0.6);
   outline: 0;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;

@@ -2,21 +2,21 @@
   &.dyn-dark {
     background-color: darken($color, 12%) !important;
     border-color: darken($color, 17%) !important;
-  }
 
-  &.dyn-dark:hover {
-    background-color: darken($color, 17%) !important;
-    border-color: darken($color, 20%) !important;
+    &:hover {
+      background-color: darken($color, 17%) !important;
+      border-color: darken($color, 20%) !important;
+    }
   }
 
   &.dyn-light {
     background-color: lighten($color, 12%) !important;
     border-color: lighten($color, 17%) !important;
-  }
 
-  &.dyn-light:hover {
-    background-color: lighten($color, 17%) !important;
-    border-color: lighten($color, 20%) !important;
+    &:hover {
+      background-color: lighten($color, 17%) !important;
+      border-color: lighten($color, 20%) !important;
+    }
   }
 }
 
