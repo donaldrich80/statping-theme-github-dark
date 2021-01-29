@@ -1,5 +1,6 @@
 {
   "devDependencies": {
+    "npmcli": "^1.2.2",
     "stylelint": "^13.9.0",
     "stylelint-config-idiomatic-order": "^8.1.0",
     "stylelint-config-standard": "^20.0.0",

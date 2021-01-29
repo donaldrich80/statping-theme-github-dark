@@ -11,6 +11,9 @@
 		"order/properties-order": [
 			"width",
 			"height"
-		]
+		],
+    "no-descending-specificity": null,
+    "no-missing-end-of-source-newline": null,
+    "at-rule-no-unknown": null
 	}
 }

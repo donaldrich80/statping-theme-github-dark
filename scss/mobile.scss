@@ -1,21 +1,24 @@
 @import 'variables';
 
 @media (max-width: 767px) {
-
-    HTML,BODY {
-        background-color: $sm-background-color;
-    }
+  html,
+  body {
+    background-color: $sm-background-color;
+  }
 
   .service-tm-menu {
     height: 300px;
   }
 
-  .service-tm-menu A {
+  .service-tm-menu a {
     height: 27px;
   }
-  .table td, .table th {
-    border-top: 1px solid #090D13;
+
+  .table td,
+  .table th {
+    border-top: 1px solid #090d13;
   }
+
   .index-chart {
     height: 380px;
   }
@@ -28,46 +31,46 @@
     height: 810px;
   }
 
-    .sm-container {
-        margin-top: 0px !important;
-        padding: 0 !important;
-    }
+  .sm-container {
+    margin-top: 0 !important;
+    padding: 0 !important;
+  }
 
-    .lower_canvas {
-      height: 4rem;
-      margin-top: -1px;
-    }
+  .lower_canvas {
+    height: 4rem;
+    margin-top: -1px;
+  }
 
-    .list-group-item H5 {
-        font-size: 0.9rem;
-    }
+  .list-group-item h5 {
+    font-size: 0.9rem;
+  }
 
-    .container {
-        padding: 0px !important;
-        padding-top: 0vh !important;
-        min-height: 960pt;
-    }
+  .container {
+    padding: 0 !important;
+    padding-top: 0 !important;
+    min-height: 960pt;
+  }
 
-    .group_header {
-        margin-left: 15px;
-    }
+  .group_header {
+    margin-left: 15px;
+  }
 
-    .navbar {
-        margin-left: 0px;
-        margin-top: 0px;
-        width: 100%;
-        box-shadow: 1px 10px 20px 0px;
-        height: 55pt;
-        color: rgba(0, 0, 0, 0.20);
-      margin-bottom: 20pt;
-    }
+  .navbar {
+    margin-left: 0;
+    margin-top: 0;
+    width: 100%;
+    box-shadow: 1px 10px 20px 0;
+    height: 55pt;
+    color: rgba(0, 0, 0, 0.2);
+    margin-bottom: 20pt;
+  }
 
   .navbar-collapse {
     z-index: 999999;
-    background-color: #0D1117;
+    background-color: #0d1117;
     width: 100%;
     padding: 10pt 15pt;
-    left: 0px;
+    left: 0;
     top: 75px;
     position: absolute;
   }
@@ -82,73 +85,72 @@
     padding-bottom: 3px;
   }
 
-  .switch LABEL {
+  .switch label {
     font-size: 10pt;
   }
 
-    .full-col-12 {
-        padding-left: 0px;
-        padding-right: 0px;
-    }
+  .full-col-12 {
+    padding-left: 0;
+    padding-right: 0;
+  }
 
-    .card {
-        border: 0;
-        border-radius: $sm-border-radius;
-        padding: $sm-padding;
-        background-color: $sm-service-background;
-        box-shadow: $mobile-card-shadow;
-    }
-    .card-footer {
-        background-color: #161B22;
-    }
-    .card-body {
-        font-size: 10pt;
-        padding: 10px 10px;
-    }
+  .card {
+    border: 0;
+    border-radius: $sm-border-radius;
+    padding: $sm-padding;
+    background-color: $sm-service-background;
+    box-shadow: $mobile-card-shadow;
+  }
 
-    .lg_number {
-        font-size: 7vw;
-    }
+  .card-footer {
+    background-color: #161b22;
+  }
 
-    .stats_area {
-        margin-top: 1.5rem !important;
-        margin-bottom: 1.5rem !important;
-    }
+  .card-body {
+    font-size: 10pt;
+    padding: 10px 10px;
+  }
 
-    .stats_area .col-4 {
-        padding-left: 0;
-        padding-right: 0;
-    }
+  .lg_number {
+    font-size: 7vw;
+  }
 
-    .navbar-item {
-        border-bottom: 1px solid #eaeaea;
-    }
+  .stats_area {
+    margin-top: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+  }
 
-    .list-group-item {
-        border-top: 1px solid #e4e4e4;
-        border: 0px;
-    }
+  .stats_area .col-4 {
+    padding-left: 0;
+    padding-right: 0;
+  }
 
-    .list-group-item:first-child {
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
-    }
+  .navbar-item {
+    border-bottom: 1px solid #eaeaea;
+  }
 
-    .list-group-item:last-child {
-        border-bottom-right-radius: 0;
-        border-bottom-left-radius: 0;
-    }
+  .list-group-item {
+    border-top: 1px solid #e4e4e4;
+    border: 0;
+  }
 
-    .list-group-item P {
-        font-size: 0.7rem;
-    }
+  .list-group-item:first-child {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
 
-    .service-chart-container {
-        height: 200px;
-    }
+  .list-group-item:last-child {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
 
+  .list-group-item p {
+    font-size: 0.7rem;
+  }
 
-
+  .service-chart-container {
+    height: 200px;
+  }
 
   .font-0 {
     font-size: 0.35rem;
@@ -185,5 +187,4 @@
   .font-8 {
     font-size: 2.5rem;
   }
-
 }
