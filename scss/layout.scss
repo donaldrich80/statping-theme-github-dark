@@ -1,7 +1,8 @@
-@import 'variables';
-@import 'mixin';
+@import "variables";
+@import "mixin";
 
-HTML,BODY {
+HTML,
+BODY {
   background-color: $background-color;
   color: $text-color;
 }
@@ -23,7 +24,6 @@ A {
 .modal {
   z-index: 999999 !important;
   display: block;
-
 }
 .modal-body {
   padding: 0.5rem 1rem;
@@ -53,7 +53,7 @@ A {
   background-color: $day-success-background;
 }
 
-.day-success:HOVER {
+.day-success:hover {
   background-color: lighten($day-success-background, 2%) !important;
 }
 
@@ -61,21 +61,18 @@ A {
   background-color: $day-error-background;
 }
 
-.day-error:HOVER {
+.day-error:hover {
   background-color: lighten($day-error-background, 2%) !important;
 }
 
 .contain-card {
-
   .card-header {
     font-size: 1.15rem;
-
   }
 
   .dropdown-menu {
     background-color: rgba(239, 239, 239, 0.65);
   }
-
 }
 
 .navbar {
@@ -84,10 +81,11 @@ A {
   background-color: $navbar-background;
 }
 
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-    color: #79C0FF !important;
-    background-color: #111D2F !important;
-    border-color: #214A81 !important;
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #79c0ff !important;
+  background-color: #111d2f !important;
+  border-color: #214a81 !important;
 }
 
 .table td {
@@ -114,7 +112,6 @@ A {
 
 .card-footer {
   background-color: $background-color;
-
 }
 
 .card-header {
@@ -137,16 +134,14 @@ A {
   text-decoration: none;
 }
 
-
-
 .dashboard_card {
   background-color: $group-list-background;
-  box-shadow: rgba(0,0,0,.05) 0px 2px 3px 1px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 3px 1px;
 }
 
-.dashboard_card:HOVER {
+.dashboard_card:hover {
   background-color: lighten($container-color, 20%) !important;
-  box-shadow: rgba(0,0,0,.05) 0px 1px 5px 3px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 5px 3px;
   -webkit-transition-duration: 300ms;
   -moz-transition-duration: 300ms;
   -o-transition-duration: 300ms;
@@ -156,17 +151,16 @@ A {
 
 .list-group-item-old {
   min-height: 85pt;
-  background-color: #090D13;
+  background-color: #090d13;
   border: 1px solid rgba(76, 76, 76, 0.12);
 }
 
-
 .list-group-item {
   min-height: 85pt;
-  background-color: #090D13;
+  background-color: #090d13;
   border: $card-border;
 }
-.list-group-item:HOVER {
+.list-group-item:hover {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px 1px;
   -webkit-transition-duration: 1000ms;
   -moz-transition-duration: 1000ms;
@@ -174,9 +168,8 @@ A {
   transition-duration: 1000ms;
   color: $text-color;
   background-color: darken($container-color, 2%) !important;
-  border-color: darken(#21262D, 2%) !important;
+  border-color: darken(#21262d, 2%) !important;
 }
-
 
 .list-group-item-action {
   color: $primary-color;
@@ -195,13 +188,13 @@ A {
   padding-top: 20px;
   padding-bottom: 25px;
   max-width: $max-width;
-  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
   background-color: $container-color;
 }
 
 .login_container {
   border-radius: 5px;
-  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
   background-color: $container-color;
 }
 
@@ -215,7 +208,7 @@ A {
   text-decoration: none;
 }
 
-.footer .links:HOVER {
+.footer .links:hover {
   color: #8c8c8c;
 }
 
@@ -223,7 +216,7 @@ A {
   color: lighten($footer-text-color, 10%);
   text-decoration: none;
 }
-.footer .statping:HOVER {
+.footer .statping:hover {
   color: lighten($footer-text-color, 0%);
   text-decoration: none;
 }
@@ -237,31 +230,31 @@ A {
   user-select: none;
 }
 
-.dates{
-  padding:10px 0px;
-  margin:10px 20px;
-  font-weight:600;
-  overflow:auto;
+.dates {
+  padding: 10px 0px;
+  margin: 10px 20px;
+  font-weight: 600;
+  overflow: auto;
   color: darken($card-background, 45%);
   font-size: 22px;
 }
-.dates div{
-  float:left;
-  width:50%;
-  text-align:center;
-  position:relative;
+.dates div {
+  float: left;
+  width: 50%;
+  text-align: center;
+  position: relative;
 }
 .dates strong {
-  display:block;
+  display: block;
   color: darken($card-background, 20%);
-  font-size:20px;
-  font-weight:700;
+  font-size: 20px;
+  font-weight: 700;
 }
-.dates span{
-  width:1px;
-  height:60px;
-  position:absolute;
-  right:0;
-  top:0;
+.dates span {
+  width: 1px;
+  height: 60px;
+  position: absolute;
+  right: 0;
+  top: 0;
   background: darken($card-background, 10%);
 }
