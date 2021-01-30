@@ -4,35 +4,52 @@
   .card {
     background-color: $sm-service-background;
     border: 0;
-    border-radius: $sm-border-radius;
+    border-radius: 24px;
     box-shadow: $mobile-card-shadow;
     padding: $sm-padding;
   }
-
+  .tr {
+    color: red;
+  }
+  .mb-4,
+  .my-4 {
+    border-bottom: 1px solid white;
+    margin-bottom: 0 !important;
+  }
   .card-footer {
     background-color: #161b22;
   }
-
-  .card-header {
-    background-color: #161b22;
+  .list-group-item {
+    min-height: 0 !important;
   }
-
+  .card-header {
+    background-color: $container-color;
+    border-bottom: $card-border;
+    color: $primary_color;
+  }
   .card-body {
     font-size: 10pt;
     padding: 10px 10px;
   }
-
-  div.list-group-item {
+  div.col-12.font-2.m-0.mb-2 {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .test {
     color: orange;
     margin: 5px;
   }
-
-  .p.divided {
-    height: 0 !important;
-  }
   div.col-12 {
+    font-size: 0 !important;
     margin: 0 !important;
     padding: 0 !important;
+
+    &.no-select {
+      height: 0 !important;
+      font-size: 0px !important;
+
+      line-height: 0 !important;
+    }
   }
   html,
   body {
@@ -188,7 +205,7 @@
   }
 
   .font-2 {
-    font-size: 0.8rem;
+    font-size: 0;
   }
 
   .font-3 {
@@ -214,6 +231,4 @@
   .font-8 {
     font-size: 2.5rem;
   }
-
-  // div.flex-fill.service_day.day-success
 }

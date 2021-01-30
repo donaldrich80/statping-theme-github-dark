@@ -1,6 +1,12 @@
 @import "variables";
 @import "mixin";
 
+title {
+  background-color: #111d2f !important;
+  border-color: #214a81 !important;
+  color: #79c0ff !important;
+}
+
 .index-chart {
   height: $service-card-height;
 
@@ -44,22 +50,38 @@
 .d-block {
   color: #c9ccd0;
 }
+div.row.p-2 {
+  font-size: 12px;
+  margin: 0 !important;
+  padding: 0 !important;
+}
 
 .dim {
   background-color: #f3f3f3;
 }
 
-div.col-12 {
-  padding-top: 15px !important;
-  padding-bottom: 15px !important;
-  padding-left: 30px !important;
-  padding-right: 30px !important;
+div.row.stats_area.mb-5 {
+  background-color: #111d2f;
+  border-bottom: #214a81;
+  border-top: #214a81;
+  color: #79c0ff;
 }
 
+.table thead th {
+  border-bottom: 0;
+  border-top: 0;
+}
+
+.table td,
+.table th {
+  border: 1px solid $minor-border !important;
+  padding: 0.75rem;
+  vertical-align: top;
+}
 h6.text-muted {
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
   font-size: 0 !important;
+  padding-bottom: 0 !important;
+  padding-top: 0 !important;
 }
 
 .slider-info {
@@ -241,10 +263,10 @@ h6.text-muted {
 }
 
 .btn-group a {
-  padding: 0.1rem 0.75rem;
-  font-size: 0.8rem;
   border: $card-border !important;
   border-radius: $global-border-radius;
+  font-size: 0.8rem;
+  padding: 0.1rem 0.75rem;
 }
 
 .online_list .badge {
@@ -287,13 +309,13 @@ h6.text-muted {
 }
 
 .container {
-  margin-bottom: 0 !important;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  margin-bottom: 0 !important;
   margin-top: 0 !important;
-  padding-top: 0 !important;
   padding-bottom: 0 !important;
   padding-left: 0 !important;
   padding-right: 0 !important;
+  padding-top: 0 !important;
 }
 
 .lower_canvas {
@@ -429,11 +451,11 @@ h6.text-muted {
 }
 
 .no-decoration {
-  color: #58a6ff;
+  color: $white-color !important;
   text-decoration: none;
 
   &:hover {
-    color: #58a6ff;
+    color: #58a6ff !important;
     text-decoration: none;
   }
 }
@@ -441,6 +463,7 @@ h6.text-muted {
 .btn-white {
   background-color: #161b22;
   border: 1px solid #0d1117;
+  border-radius: 6px;
   color: #767676;
 
   &:hover {
@@ -682,4 +705,8 @@ h6.text-muted {
   opacity: 0;
   transform: translateX(10px);
   transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.navbar-brand {
+  color: $primary_color;
 }

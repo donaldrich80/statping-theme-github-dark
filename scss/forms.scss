@@ -308,6 +308,12 @@ input.inputTags-field:focus {
   margin-right: 10px;
 }
 
+.form-control[readonly] {
+  background-color: $midnight-color !important;
+  border: 1px solid $minor-border !important;
+  color: $text-color !important;
+}
+
 .drag_icon {
   color: #b1b1b1;
   cursor: move; /* fallback if grab cursor is unsupported */
@@ -327,4 +333,8 @@ input.inputTags-field:focus {
   cursor: grabbing;
   cursor: -moz-grabbing;
   cursor: -webkit-grabbing;
+}
+
+col.d-none.d-md-table-cell {
+  background-color: $input-prefilled !important;
 }

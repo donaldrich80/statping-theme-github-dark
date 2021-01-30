@@ -27,6 +27,8 @@ $day-error-background: #5a1615;
 /*    Status Container   */
 $card-background: #161b22;
 $card-border: 1px solid #21262d;
+$minor-border: 1px solid #21262d;
+$major-border: 1px solid #30363d;
 $card-shadow: 0 3px 6px 1px rgba(0, 0, 0, 0.08);
 $service-title: #c9ccd0;
 $service-title-size: 1.8rem;
@@ -52,7 +54,7 @@ $footer-display: block;
 
 /*   Global Settings */
 $global-border-radius: 0.2rem;
-
+$button-radius: 6px;
 /*   Mobile Settings   */
 $sm-background-color: #090d13;
 $sm-border-radius: 0;

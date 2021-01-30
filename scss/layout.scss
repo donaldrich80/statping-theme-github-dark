@@ -51,10 +51,10 @@ a {
 }
 
 .day-success {
-  background-color: $day-success-background;
+  background-color: #044289;
 
   &:hover {
-    background-color: lighten($day-success-background, 2%) !important;
+    background-color: lighten(#044289, 2%) !important;
   }
 }
 
@@ -109,6 +109,10 @@ a {
 .form-control {
   border-radius: $global-border-radius;
 }
+div.col-md-3.col-sm-12.mb-4.mb-md-0 {
+  border: 0 !important;
+  border-radius: 0 !important;
+}
 
 .card {
   background-color: $background-color !important;
@@ -127,7 +131,7 @@ a {
 .card-body {
   background-color: $background-color;
   overflow: hidden;
-
+  padding-bottom: 0 !important;
   & h4 a {
     color: $service-title;
     text-decoration: none;

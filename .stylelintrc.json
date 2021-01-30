@@ -41,6 +41,8 @@
     "no-descending-specificity": null,
 
     "at-rule-no-unknown": null,
-    "no-extra-semicolons": null
+    "no-extra-semicolons": null,
+    "no-duplicate-selectors": null,
+    "declaration-block-no-shorthand-property-overrides": null
   }
 }
