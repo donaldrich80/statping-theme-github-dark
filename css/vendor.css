@@ -1,6 +1,4 @@
 .flatpickr-calendar {
-  width: 307.875px;
-  font-size: 14px;
   -webkit-animation: none;
   animation: none;
   background: transparent;
@@ -15,6 +13,7 @@
   box-sizing: border-box;
   direction: ltr;
   display: none;
+  font-size: 14px;
   line-height: 24px;
   opacity: 0;
   padding: 0;
@@ -23,6 +22,7 @@
   -ms-touch-action: manipulation;
   touch-action: manipulation;
   visibility: hidden;
+  width: 307.875px;
 &.inline,
 &.open {
   max-height: 640px;
@@ -74,22 +74,22 @@
   border-left: 0;
 }
 &.showTimeInput.hasTime .flatpickr-time {
-  height: 40px;
   border-top: 1px solid #e6e6e6;
+  height: 40px;
 }
 &.noCalendar.hasTime .flatpickr-time {
   height: auto;
 }
 &::after,
 &::before {
-  height: 0;
-  width: 0;
   border: solid transparent;
   content: "";
   display: block;
+  height: 0;
   left: 22px;
   pointer-events: none;
   position: absolute;
+  width: 0;
 }
 &.rightMost::after,
 &.rightMost::before {
@@ -279,12 +279,11 @@
 }
 }
 .flatpickr-current-month {
-  height: 34px;
-  width: 75%;
-  font-size: 135%;
-  font-weight: 300;
   color: inherit;
   display: inline-block;
+  font-size: 135%;
+  font-weight: 300;
+  height: 34px;
   left: 12.5%;
   line-height: inherit;
   line-height: 1;
@@ -293,11 +292,12 @@
   text-align: center;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
+  width: 75%;
 & span.cur-month {
-  font-weight: 700;
   color: inherit;
   display: inline-block;
   font-family: inherit;
+  font-weight: 700;
   margin-left: 0.5ch;
   padding: 0;
 &:hover {
@@ -305,9 +305,9 @@
 }
 }
 & .numInputWrapper {
+  display: inline-block;
   width: 6ch;
   width: 7ch\0;
-  display: inline-block;
 & span.arrowUp::after {
   border-bottom-color: rgba(0, 0, 0, 0.9);
 }
@@ -316,9 +316,6 @@
 }
 }
 & input.cur-year {
-  height: auto;
-  font-size: inherit;
-  font-weight: 300;
   -webkit-appearance: textfield;
   -moz-appearance: textfield;
   appearance: textfield;
@@ -331,6 +328,9 @@
   cursor: text;
   display: inline-block;
   font-family: inherit;
+  font-size: inherit;
+  font-weight: 300;
+  height: auto;
   line-height: inherit;
   margin: 0;
   padding: 0 0 0 0.5ch;
@@ -341,16 +341,12 @@
 }
 & input.cur-year[disabled],
 & input.cur-year[disabled]:hover {
-  font-size: 100%;
   background: transparent;
   color: rgba(0, 0, 0, 0.5);
+  font-size: 100%;
   pointer-events: none;
 }
 & .flatpickr-monthDropdown-months {
-  height: auto;
-  width: auto;
-  font-size: inherit;
-  font-weight: 300;
   -webkit-appearance: menulist;
   -moz-appearance: menulist;
   appearance: menulist;
@@ -362,12 +358,16 @@
   color: inherit;
   cursor: pointer;
   font-family: inherit;
+  font-size: inherit;
+  font-weight: 300;
+  height: auto;
   line-height: inherit;
   margin: -1px 0 0;
   outline: none;
   padding: 0 0 0 0.5ch;
   position: relative;
   vertical-align: initial;
+  width: auto;
 &:active,
 &:focus {
   outline: none;
@@ -469,9 +469,6 @@ span.flatpickr-weekday {
 }
 }
 .flatpickr-day {
-  height: 39px;
-  width: 14.2857143%;
-  font-weight: 400;
   background: none;
   border: 1px solid transparent;
   border-radius: 150px;
@@ -485,6 +482,8 @@ span.flatpickr-weekday {
   flex-basis: 14.2857143%;
   -ms-flex-pack: center;
   -ms-flex-preferred-size: 14.2857143%;
+  font-weight: 400;
+  height: 39px;
   -webkit-justify-content: center;
   justify-content: center;
   line-height: 39px;
@@ -492,6 +491,7 @@ span.flatpickr-weekday {
   max-width: 39px;
   position: relative;
   text-align: center;
+  width: 14.2857143%;
 &.inRange,
 &.nextMonthDay.inRange,
 &.nextMonthDay.today.inRange,
@@ -678,8 +678,6 @@ span.flatpickr-weekday {
   width: 49%;
 }
 & input {
-  height: inherit;
-  font-size: 14px;
   -webkit-appearance: textfield;
   -moz-appearance: textfield;
   appearance: textfield;
@@ -691,6 +689,8 @@ span.flatpickr-weekday {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   color: #393939;
+  font-size: 14px;
+  height: inherit;
   line-height: inherit;
   margin: 0;
   padding: 0;
@@ -710,26 +710,26 @@ span.flatpickr-weekday {
 }
 & .flatpickr-am-pm,
 & .flatpickr-time-separator {
-  height: inherit;
-  width: 2%;
-  font-weight: 700;
   -webkit-align-self: center;
   align-self: center;
   color: #393939;
   -ms-flex-item-align: center;
   float: left;
+  font-weight: 700;
+  height: inherit;
   line-height: inherit;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  width: 2%;
 }
 & .flatpickr-am-pm {
-  width: 18%;
-  font-weight: 400;
   cursor: pointer;
+  font-weight: 400;
   outline: 0;
   text-align: center;
+  width: 18%;
 }
 & .flatpickr-am-pm:focus,
 & .flatpickr-am-pm:hover,
@@ -1478,11 +1478,11 @@ span.CodeMirror-selectedtext {
   box-sizing: padding-box;
   position: relative;
 & > input {
-  height: 20px;
-  font-size: 10px;
   bottom: 20px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  font-size: 10px;
+  height: 20px;
   padding: 0 0 0 2px;
   position: absolute;
   -webkit-user-select: text;
@@ -1559,20 +1559,20 @@ span.CodeMirror-selectedtext {
 }
 &
   input {
-  height: 21px;
-  width: 100%;
-  font-size: 11px;
   border: 1px solid #cbcbcb;
   border-radius: 2px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   color: #333;
+  font-size: 11px;
+  height: 21px;
   padding: 3px;
   text-align: center;
   -webkit-user-select: text;
   -moz-user-select: text;
   -ms-user-select: text;
   user-select: text;
+  width: 100%;
 }
 &
   input[type="number"] {
@@ -1595,11 +1595,11 @@ span.CodeMirror-selectedtext {
 }
 &
   .postfix {
-  height: 21px;
-  font-size: 11px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   display: inline-block;
+  font-size: 11px;
+  height: 21px;
   line-height: 2;
   padding: 2px;
   position: absolute;
@@ -1724,19 +1724,19 @@ span.CodeMirror-selectedtext {
   .colorsets
   > .color-list
   .add-color-item {
-  height: 13px;
-  width: 13px;
-  font-size: 16px;
-  font-weight: 400;
   color: #8e8e8e;
   cursor: pointer;
   display: inline-block;
   font-family: serif, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  height: 13px;
   line-height: 1;
   margin-bottom: 12px;
   margin-right: 12px;
   text-align: center;
   vertical-align: middle;
+  width: 13px;
 }
 & .colorpicker-body .color-chooser {
   background-color: rgba(0, 0, 0, 0.5);
@@ -2554,10 +2554,9 @@ span.CodeMirror-selectedtext {
   .colorpicker-body
   .color-view
   .color-view-container {
-  height: 100%;
-  width: 100%;
-  font-size: 14px;
   cursor: pointer;
+  font-size: 14px;
+  height: 100%;
   line-height: 34px;
   text-align: center;
   text-shadow: 0 0 3px #535353;
@@ -2565,6 +2564,7 @@ span.CodeMirror-selectedtext {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  width: 100%;
 }
 & .colorpicker-body .color-tool {
   padding: 8px;

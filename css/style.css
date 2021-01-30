@@ -278,15 +278,15 @@ fieldset {
   padding: 0;
 }
 legend {
-  width: 100%;
-  font-size: 1.5rem;
   color: inherit;
   display: block;
+  font-size: 1.5rem;
   line-height: inherit;
   margin-bottom: 0.5rem;
   max-width: 100%;
   padding: 0;
   white-space: normal;
+  width: 100%;
 }
 progress {
   vertical-align: baseline;
@@ -1727,19 +1727,19 @@ pre {
 }
 }
 .form-control {
-  height: calc(1.5em + 0.75rem + 2px);
-  width: 100%;
-  font-size: 1rem;
-  font-weight: 400;
   background-clip: padding-box;
   background-color: #fff;
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
   color: #495057;
   display: block;
+  font-size: 1rem;
+  font-weight: 400;
+  height: calc(1.5em + 0.75rem + 2px);
   line-height: 1.5;
   padding: 0.375rem 0.75rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  width: 100%;
 
 @media (prefers-reduced-motion: reduce) {
     transition: none
@@ -1827,16 +1827,16 @@ select.form-control:focus::-ms-value {
 }
 }
 .form-control-sm {
-  height: calc(1.5em + 0.5rem + 2px);
-  font-size: 0.875rem;
   border-radius: 0.2rem;
+  font-size: 0.875rem;
+  height: calc(1.5em + 0.5rem + 2px);
   line-height: 1.5;
   padding: 0.25rem 0.5rem;
 }
 .form-control-lg {
-  height: calc(1.5em + 1rem + 2px);
-  font-size: 1.25rem;
   border-radius: 0.3rem;
+  font-size: 1.25rem;
+  height: calc(1.5em + 1rem + 2px);
   line-height: 1.5;
   padding: 0.5rem 1rem;
 }
@@ -1896,11 +1896,11 @@ textarea.form-control {
 }
 }
 .valid-feedback {
-  width: 100%;
-  font-size: 80%;
   color: #28a745;
   display: none;
+  font-size: 80%;
   margin-top: 0.25rem;
+  width: 100%;
 }
 .valid-tooltip {
   background-color: rgba(40, 167, 69, 0.9);
@@ -2025,11 +2025,11 @@ textarea.form-control.is-valid {
   box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
 }
 .invalid-feedback {
-  width: 100%;
-  font-size: 80%;
   color: #dc3545;
   display: none;
+  font-size: 80%;
   margin-top: 0.25rem;
+  width: 100%;
 }
 .invalid-tooltip {
   background-color: rgba(220, 53, 69, 0.9);
@@ -3007,16 +3007,16 @@ input[type="submit"].btn-block {
   overflow: hidden;
 }
 .dropdown-item {
-  width: 100%;
-  font-weight: 400;
   background-color: transparent;
   border: 0;
   clear: both;
   color: #212529;
   display: block;
+  font-weight: 400;
   padding: 0.25rem 1.5rem;
   text-align: inherit;
   white-space: nowrap;
+  width: 100%;
 &:focus,
 &:hover {
   background-color: #f8f9fa;
@@ -3476,10 +3476,6 @@ input[type="submit"].btn-block {
   background-color: rgba(0, 123, 255, 0.5);
 }
 .custom-select {
-  height: calc(1.5em + 0.75rem + 2px);
-  width: 100%;
-  font-size: 1rem;
-  font-weight: 400;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -3490,9 +3486,13 @@ input[type="submit"].btn-block {
   border-radius: 0.25rem;
   color: #495057;
   display: inline-block;
+  font-size: 1rem;
+  font-weight: 400;
+  height: calc(1.5em + 0.75rem + 2px);
   line-height: 1.5;
   padding: 0.375rem 1.75rem 0.375rem 0.75rem;
   vertical-align: middle;
+  width: 100%;
 &:focus {
   border-color: #80bdff;
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
@@ -3517,15 +3517,15 @@ input[type="submit"].btn-block {
   display: none;
 }
 .custom-select-sm {
-  height: calc(1.5em + 0.5rem + 2px);
   font-size: 0.875rem;
+  height: calc(1.5em + 0.5rem + 2px);
   padding-bottom: 0.25rem;
   padding-left: 0.5rem;
   padding-top: 0.25rem;
 }
 .custom-select-lg {
-  height: calc(1.5em + 1rem + 2px);
   font-size: 1.25rem;
+  height: calc(1.5em + 1rem + 2px);
   padding-bottom: 0.5rem;
   padding-left: 1rem;
   padding-top: 0.5rem;
@@ -3559,11 +3559,11 @@ input[type="submit"].btn-block {
 }
 }
 .custom-file-label {
-  height: calc(1.5em + 0.75rem + 2px);
-  font-weight: 400;
   background-color: #fff;
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
+  font-weight: 400;
+  height: calc(1.5em + 0.75rem + 2px);
   left: 0;
   z-index: 1;
 }
@@ -4781,10 +4781,10 @@ a.badge-dark:focus {
   }
 }
 .progress {
-  height: 1rem;
-  font-size: 0.75rem;
   background-color: #e9ecef;
   border-radius: 0.25rem;
+  font-size: 0.75rem;
+  height: 1rem;
   overflow: hidden;
 }
 .progress,
