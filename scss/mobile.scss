@@ -1,7 +1,6 @@
 @import "variables";
 
 @media (max-width: 767px) {
-
   .card {
     background-color: $sm-service-background;
     border: 0;
@@ -25,14 +24,14 @@
 
   div.list-group-item {
     color: orange;
-    margins: 5px;
+    margin: 5px;
   }
 
   .p.divided {
     height: 0 !important;
   }
   div.col-12 {
-    margins: 0 !important;
+    margin: 0 !important;
     padding: 0 !important;
   }
   html,
@@ -57,7 +56,7 @@
     height: 380px;
   }
   .footer {
-    margins: 0;
+    margin: 0;
     padding: 0;
   }
 
@@ -103,11 +102,11 @@
     margin-top: 0;
     width: 100%;
 
-  &.router-link-exact-active.router-link-active {
-    background-color: #111d2f !important;
-    border-color: #214a81 !important;
-    color: #79c0ff !important;
-  }
+    &.router-link-exact-active.router-link-active {
+      background-color: #111d2f !important;
+      border-color: #214a81 !important;
+      color: #79c0ff !important;
+    }
   }
 
   .navbar {

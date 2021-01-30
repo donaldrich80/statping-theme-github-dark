@@ -7,12 +7,12 @@
   z-index: 995;
 
   & button {
+    height: 26px;
+    font-size: 6pt;
     background-color: $dark-blue;
     border: 1px solid #a7a7a7;
     border-radius: 4px !important;
     color: $white-color;
-    font-size: 6pt;
-    height: 26px;
     margin: 6px;
     padding: 5px 7px;
   }
@@ -87,19 +87,19 @@ input.inputTags-field:focus {
 }
 
 .inputTags-list {
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 400;
   background-clip: padding-box;
   background-color: orange;
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
   color: #495057;
   display: block;
-  font-size: 1rem;
-  font-weight: 400;
   line-height: 1.5;
   min-height: calc(2.25rem + 2px);
   padding: 0.2rem 0.35rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  width: 100%;
 }
 
 .inputTags-item {
@@ -256,6 +256,9 @@ input.inputTags-field:focus {
 }
 
 .CodeMirror {
+  height: 80vh;
+  width: 100%;
+  font-size: 14px;
   background-color: $midnight-color;
   background-image: none;
   border: 1px solid #ccc;
@@ -270,15 +273,12 @@ input.inputTags-field:focus {
 
   /* Code Mirror Settings */
   font-family: monospace;
-  font-size: 14px;
-  height: 80vh;
   line-height: 1.5;
   margin: 0;
   overflow: auto;
   padding: 0;
   position: relative;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
-  width: 100%;
 }
 
 .CodeMirror-focused {

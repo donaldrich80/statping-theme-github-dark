@@ -8,5 +8,8 @@
   },
   "scripts": {
     "stylelint-check": "stylelint-config-prettier-check"
+  },
+  "dependencies": {
+    "yarn": "^1.22.10"
   }
 }
