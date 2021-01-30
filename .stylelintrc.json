@@ -3,18 +3,18 @@
     "stylelint-config-idiomatic-order",
     "stylelint-prettier/recommended",
     "stylelint-config-recommended"
-    ],
-	"plugins": [
-		"stylelint-order",
+  ],
+  "plugins": [
+    "stylelint-order",
     "stylelint-prettier",
     "stylelint-scss",
     "stylelint-use-nesting"
   ],
-	"rules": {
+  "rules": {
     "order/properties-alphabetical-order": true,
     "prettier/prettier": true,
     "csstools/use-nesting": "always",
-		"order/order": [
+    "order/order": [
       {
         "type": "rule",
         "selector": "card*"
@@ -27,29 +27,20 @@
     "order/properties-order": [
       {
         "groupName": "dimensions",
-        "properties": [
-          "height",
-          "width"
-        ]
+        "properties": ["height", "width"]
       },
       {
         "groupName": "badge",
-        "properties": [
-          "font-size",
-          "font-weight"
-        ]
+        "properties": ["font-size", "font-weight"]
       },
       {
         "groupName": "card",
-        "properties": [
-          "font-size",
-          "font-weight"
-        ]
+        "properties": ["font-size", "font-weight"]
       }
     ],
     "no-descending-specificity": null,
 
     "at-rule-no-unknown": null,
     "no-extra-semicolons": null
-	}
+  }
 }
