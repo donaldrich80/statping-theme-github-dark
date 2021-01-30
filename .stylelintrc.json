@@ -1,6 +1,9 @@
 {
   "extends": [
-  "stylelint-prettier/recommended","stylelint-config-recommended","stylelint-config-idiomatic-order"],
+    "stylelint-config-idiomatic-order",
+    "stylelint-prettier/recommended",
+    "stylelint-config-recommended"
+    ],
 	"plugins": [
 		"stylelint-order",
     "stylelint-prettier",
@@ -8,6 +11,7 @@
     "stylelint-use-nesting"
   ],
 	"rules": {
+    "order/properties-alphabetical-order": true,
     "prettier/prettier": true,
     "csstools/use-nesting": "always",
 		"order/order": [
@@ -44,7 +48,8 @@
       }
     ],
     "no-descending-specificity": null,
-    "order/properties-alphabetical-order": true,
-    "at-rule-no-unknown": null
+
+    "at-rule-no-unknown": null,
+    "no-extra-semicolons": null
 	}
 }

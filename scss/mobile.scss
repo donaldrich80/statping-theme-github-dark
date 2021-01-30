@@ -1,6 +1,40 @@
 @import "variables";
 
 @media (max-width: 767px) {
+
+  .card {
+    background-color: $sm-service-background;
+    border: 0;
+    border-radius: $sm-border-radius;
+    box-shadow: $mobile-card-shadow;
+    padding: $sm-padding;
+  }
+
+  .card-footer {
+    background-color: #161b22;
+  }
+
+  .card-header {
+    background-color: #161b22;
+  }
+
+  .card-body {
+    font-size: 10pt;
+    padding: 10px 10px;
+  }
+
+  div.list-group-item {
+    color: orange;
+    margins: 5px;
+  }
+
+  .p.divided {
+    height: 0 !important;
+  }
+  div.col-12 {
+    margins: 0 !important;
+    padding: 0 !important;
+  }
   html,
   body {
     background-color: $sm-background-color;
@@ -21,6 +55,10 @@
 
   .index-chart {
     height: 380px;
+  }
+  .footer {
+    margins: 0;
+    padding: 0;
   }
 
   .online_list {
@@ -46,7 +84,6 @@
   }
 
   .container {
-    min-height: 960pt;
     padding: 0 !important;
     padding-top: 0 !important;
   }
@@ -55,24 +92,39 @@
     margin-left: 15px;
   }
 
+  .navbar-item {
+    border-bottom: 1px solid #eaeaea;
+  }
+  .nav-link {
+    border: 1px solid $card-border;
+    color: $white-color;
+    margin-bottom: 0 !important;
+    margin-left: 0;
+    margin-top: 0;
+    width: 100%;
+
+  &.router-link-exact-active.router-link-active {
+    background-color: #111d2f !important;
+    border-color: #214a81 !important;
+    color: #79c0ff !important;
+  }
+  }
+
   .navbar {
-    box-shadow: 1px 10px 20px 0;
-    color: rgba(0, 0, 0, 0.2);
-    height: 55pt;
-    margin-bottom: 20pt;
+    margin-bottom: 0 !important;
     margin-left: 0;
     margin-top: 0;
     width: 100%;
   }
 
   .navbar-collapse {
-    background-color: #0d1117;
-    left: 0;
-    padding: 10pt 15pt;
-    position: absolute;
-    top: 75px;
-    width: 100%;
-    z-index: 999999;
+    background-color: $navbar-background !important;
+    border-color: $card-border !important;
+    color: $navbar-color !important;
+  }
+
+  .navbar-toggler {
+    border: $card-border !important;
   }
 
   .btn-sm {
@@ -94,23 +146,6 @@
     padding-right: 0;
   }
 
-  .card {
-    background-color: $sm-service-background;
-    border: 0;
-    border-radius: $sm-border-radius;
-    box-shadow: $mobile-card-shadow;
-    padding: $sm-padding;
-  }
-
-  .card-footer {
-    background-color: #161b22;
-  }
-
-  .card-body {
-    font-size: 10pt;
-    padding: 10px 10px;
-  }
-
   .lg_number {
     font-size: 7vw;
   }
@@ -124,14 +159,8 @@
       padding-right: 0;
     }
   }
-
-  .navbar-item {
-    border-bottom: 1px solid #eaeaea;
-  }
-
   .list-group-item {
-    border: 0;
-    border-top: 1px solid #e4e4e4;
+    border: 0 !important;
 
     &:first-child {
       border-top-left-radius: 0;
@@ -147,7 +176,6 @@
       font-size: 0.7rem;
     }
   }
-
   .service-chart-container {
     height: 200px;
   }
@@ -187,4 +215,6 @@
   .font-8 {
     font-size: 2.5rem;
   }
+
+  // div.flex-fill.service_day.day-success
 }
