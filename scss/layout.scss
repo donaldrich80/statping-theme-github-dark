@@ -3,8 +3,8 @@
 
 html,
 body {
-  color: $text-color;
   background-color: $background-color;
+  color: $text-color;
 }
 
 a {
@@ -12,38 +12,38 @@ a {
 }
 
 .modal-backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  left: 0;
   position: absolute;
   top: 0;
-  left: 0;
-  z-index: 1040;
   width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1040;
 }
 
 .modal {
-  z-index: 999999 !important;
   display: block;
+  z-index: 999999 !important;
 }
 
 .modal-body {
-  padding: 0.5rem 1rem;
-  color: $text-color;
   background-color: $background-color;
   border: $card-border;
+  color: $text-color;
+  padding: 0.5rem 1rem;
 }
 
 .modal-header {
-  padding: 0.5rem 1rem;
-  color: $navbar-color;
   background-color: $navbar-background;
+  color: $navbar-color;
+  padding: 0.5rem 1rem;
 }
 
 .modal-footer {
-  padding: 0.5rem 1rem;
-  color: $text-color;
   background-color: $midnight-color;
   border: $card-border;
+  color: $text-color;
+  padding: 0.5rem 1rem;
 }
 
 .text-muted {
@@ -77,21 +77,21 @@ a {
 }
 
 .navbar {
-  margin-bottom: 30px;
-  color: $navbar-color;
   background-color: $navbar-background;
+  color: $navbar-color;
+  margin-bottom: 30px;
 }
 
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
-  color: #79c0ff !important;
   background-color: #111d2f !important;
   border-color: #214a81 !important;
+  color: #79c0ff !important;
 }
 
 .table td {
-  color: $text-color;
   border-top: 1px solid $navbar-background !important;
+  color: $text-color;
 }
 
 .nav-pills {
@@ -124,14 +124,14 @@ div.col-md-3.col-sm-12.mb-4.mb-md-0 {
 }
 
 .card-header {
-  color: $text-color;
   background-color: $navbar-background;
+  color: $text-color;
 }
 
 .card-body {
-  padding-bottom: 0 !important;
-  overflow: hidden;
   background-color: $background-color;
+  overflow: hidden;
+  padding-bottom: 0 !important;
   & h4 a {
     color: $service-title;
     text-decoration: none;
@@ -159,15 +159,15 @@ div.col-md-3.col-sm-12.mb-4.mb-md-0 {
 }
 
 .list-group-item {
-  min-height: 85pt;
   background-color: #090d13;
   border: $card-border;
+  min-height: 85pt;
 
   &:hover {
-    color: $text-color;
     background-color: darken($container-color, 2%) !important;
     border-color: darken(#21262d, 2%) !important;
     box-shadow: rgba(0, 0, 0, 0.1) 0 4px 6px 1px;
+    color: $text-color;
     -webkit-transition-duration: 1000ms;
     -moz-transition-duration: 1000ms;
     -o-transition-duration: 1000ms;
@@ -184,16 +184,16 @@ div.col-md-3.col-sm-12.mb-4.mb-md-0 {
 }
 
 .chart_list_tooltip {
-  height: 30px;
   font-size: 6pt;
+  height: 30px;
 }
 
 .container {
-  max-width: $max-width;
-  padding-top: 20px;
-  padding-bottom: 25px;
   background-color: $container-color;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  max-width: $max-width;
+  padding-bottom: 25px;
+  padding-top: 20px;
 }
 
 .login_container {
@@ -235,33 +235,33 @@ div.col-md-3.col-sm-12.mb-4.mb-md-0 {
 }
 
 .dates {
-  margin: 10px 20px;
-  padding: 10px 0;
-  overflow: auto;
   color: darken($card-background, 45%);
-  font-weight: 600;
   font-size: 22px;
+  font-weight: 600;
+  margin: 10px 20px;
+  overflow: auto;
+  padding: 10px 0;
 
   & div {
-    position: relative;
     float: left;
-    width: 50%;
+    position: relative;
     text-align: center;
+    width: 50%;
   }
 
   & strong {
-    display: block;
     color: darken($card-background, 20%);
-    font-weight: 700;
+    display: block;
     font-size: 20px;
+    font-weight: 700;
   }
 
   & span {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 1px;
-    height: 60px;
     background: darken($card-background, 10%);
+    height: 60px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1px;
   }
 }

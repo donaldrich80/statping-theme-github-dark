@@ -2,19 +2,19 @@
 
 @media (max-width: 767px) {
   .card {
-    padding: $sm-padding;
     background-color: $sm-service-background;
     border: 0;
     border-radius: 24px;
     box-shadow: $mobile-card-shadow;
+    padding: $sm-padding;
   }
   .tr {
     color: red;
   }
   .mb-4,
   .my-4 {
-    margin-bottom: 0 !important;
     border-bottom: 1px solid white;
+    margin-bottom: 0 !important;
   }
   .card-footer {
     background-color: #161b22;
@@ -23,30 +23,30 @@
     min-height: 0 !important;
   }
   .card-header {
-    color: $primary_color;
     background-color: $container-color;
     border-bottom: $card-border;
+    color: $primary_color;
   }
   .card-body {
-    padding: 10px 10px;
     font-size: 10pt;
+    padding: 10px 10px;
   }
   div.col-12.font-2.m-0.mb-2 {
     margin: 0 !important;
     padding: 0 !important;
   }
   .test {
-    margin: 5px;
     color: orange;
+    margin: 5px;
   }
   div.col-12 {
+    font-size: 0 !important;
     margin: 0 !important;
     padding: 0 !important;
-    font-size: 0 !important;
 
     &.no-select {
-      height: 0 !important;
       font-size: 0px !important;
+      height: 0 !important;
 
       line-height: 0 !important;
     }
@@ -112,31 +112,31 @@
     border-bottom: 1px solid #eaeaea;
   }
   .nav-link {
-    width: 100%;
-    margin-top: 0;
+    border: 1px solid $card-border;
+    color: $white-color;
     margin-bottom: 0 !important;
     margin-left: 0;
-    color: $white-color;
-    border: 1px solid $card-border;
+    margin-top: 0;
+    width: 100%;
 
     &.router-link-exact-active.router-link-active {
-      color: #79c0ff !important;
       background-color: #111d2f !important;
       border-color: #214a81 !important;
+      color: #79c0ff !important;
     }
   }
 
   .navbar {
-    width: 100%;
-    margin-top: 0;
     margin-bottom: 0 !important;
     margin-left: 0;
+    margin-top: 0;
+    width: 100%;
   }
 
   .navbar-collapse {
-    color: $navbar-color !important;
     background-color: $navbar-background !important;
     border-color: $card-border !important;
+    color: $navbar-color !important;
   }
 
   .navbar-toggler {
@@ -149,8 +149,8 @@
   }
 
   .badge {
-    padding-top: 2px;
     padding-bottom: 3px;
+    padding-top: 2px;
   }
 
   .switch label {
@@ -158,8 +158,8 @@
   }
 
   .full-col-12 {
-    padding-right: 0;
     padding-left: 0;
+    padding-right: 0;
   }
 
   .lg_number {
@@ -167,12 +167,12 @@
   }
 
   .stats_area {
-    margin-top: 1.5rem !important;
     margin-bottom: 1.5rem !important;
+    margin-top: 1.5rem !important;
 
     & .col-4 {
-      padding-right: 0;
       padding-left: 0;
+      padding-right: 0;
     }
   }
   .list-group-item {
@@ -184,8 +184,8 @@
     }
 
     &:last-child {
-      border-bottom-right-radius: 0;
       border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
     }
 
     & p {
