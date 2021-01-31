@@ -11,11 +11,6 @@
   .tr {
     color: red;
   }
-  .mb-4,
-  .my-4 {
-    border-bottom: 1px solid white;
-    margin-bottom: 0 !important;
-  }
   .card-footer {
     background-color: #161b22;
   }
@@ -25,7 +20,7 @@
   .card-header {
     background-color: $container-color;
     border-bottom: $card-border;
-    color: $primary_color;
+    color: $white_color;
   }
   .card-body {
     font-size: 10pt;
@@ -35,6 +30,11 @@
     margin: 0 !important;
     padding: 0 !important;
   }
+
+  div.col-md-6.col-sm-12.pl-0.mt-4.mt-md-0.mb-3 {
+    display: none !important;
+  }
+
   .test {
     color: orange;
     margin: 5px;
@@ -118,12 +118,12 @@
     margin-left: 0;
     margin-top: 0;
     width: 100%;
+  }
 
-    &.router-link-exact-active.router-link-active {
-      background-color: #111d2f !important;
-      border-color: #214a81 !important;
-      color: #79c0ff !important;
-    }
+  .nav-link.router-link-exact-active.router-link-active {
+    background-color: #111d2f !important;
+    border-color: #214a81 !important;
+    color: #79c0ff !important;
   }
 
   .navbar {

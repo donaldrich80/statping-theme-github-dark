@@ -52,10 +52,12 @@ title {
 }
 div.row.p-2 {
   font-size: 12px;
-  margin: 0 !important;
+  margin: -5px !important;
   padding: 0 !important;
 }
-
+div.col-md-6.col-sm-12.pl-0.mt-4.mt-md-0.mb-3 {
+  display: none !important;
+}
 .dim {
   background-color: #f3f3f3;
 }
@@ -312,7 +314,7 @@ h6.text-muted {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
   margin-bottom: 0 !important;
   margin-top: 0 !important;
-  padding-bottom: 0 !important;
+  padding-bottom: $page-ud-margins !important;
   padding-left: 0 !important;
   padding-right: 0 !important;
   padding-top: 0 !important;
@@ -414,7 +416,6 @@ h6.text-muted {
 }
 
 .badge {
-  border-radius: $global-border-radius;
   color: $white-color;
 }
 
@@ -434,6 +435,7 @@ h6.text-muted {
   background-color: $midnight-color;
   border: 1px solid $success-color;
   color: $success-color;
+  border-radius: $round-badge;
 }
 
 .badge-primary {
@@ -451,13 +453,13 @@ h6.text-muted {
 }
 
 .no-decoration {
+  color: $primary-color !important;
+  text-decoration: none;
+}
+
+.no-decoration:hover {
   color: $white-color !important;
   text-decoration: none;
-
-  &:hover {
-    color: #58a6ff !important;
-    text-decoration: none;
-  }
 }
 
 .btn-white {

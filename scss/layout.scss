@@ -50,12 +50,17 @@ a {
   color: lighten($text-color, 30%) !important;
 }
 
-.day-success {
-  background-color: #044289;
+.mt-3,
+.my-3 {
+  margin-top: 0 !important;
+}
 
-  &:hover {
-    background-color: lighten(#044289, 2%) !important;
-  }
+.day-success {
+  background-color: $input-color !important;
+}
+
+.day-success:hover {
+  background-color: lighten($input-color, 2%) !important;
 }
 
 .day-error {
@@ -79,7 +84,7 @@ a {
 .navbar {
   background-color: $navbar-background;
   color: $navbar-color;
-  margin-bottom: 30px;
+  margin-bottom: $page-ud-margins;
 }
 
 .nav-pills .nav-link.active,
@@ -131,11 +136,6 @@ div.col-md-3.col-sm-12.mb-4.mb-md-0 {
 .card-body {
   background-color: $background-color;
   overflow: hidden;
-  padding-bottom: 0 !important;
-  & h4 a {
-    color: $service-title;
-    text-decoration: none;
-  }
 }
 
 .card-title a {
@@ -143,11 +143,16 @@ div.col-md-3.col-sm-12.mb-4.mb-md-0 {
   text-decoration: none;
 }
 
+div.col-md-6.col-sm-12.pl-2.mt-2.mt-md-0.mb-3 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
 .dashboard_card {
   background-color: $group-list-background;
   box-shadow: rgba(0, 0, 0, 0.05) 0 2px 3px 1px;
 
-  &:hover {
+  .dashboard_card:hover {
     background-color: lighten($container-color, 20%) !important;
     border: 1px solid $white-color;
     box-shadow: rgba(0, 0, 0, 0.05) 0 1px 5px 3px;
@@ -156,14 +161,17 @@ div.col-md-3.col-sm-12.mb-4.mb-md-0 {
     -o-transition-duration: 300ms;
     transition-duration: 300ms;
   }
-}
 
-.list-group-item {
-  background-color: #090d13;
-  border: $card-border;
-  min-height: 85pt;
+  .list-group-item {
+    background-color: #090d13;
+    border: $card-border;
+    min-height: 85pt;
+  }
 
-  &:hover {
+  .list-group-item:hover {
+    background-color: #090d13;
+    border: $card-border;
+    min-height: 85pt;
     background-color: darken($container-color, 2%) !important;
     border-color: darken(#21262d, 2%) !important;
     box-shadow: rgba(0, 0, 0, 0.1) 0 4px 6px 1px;
@@ -173,95 +181,102 @@ div.col-md-3.col-sm-12.mb-4.mb-md-0 {
     -o-transition-duration: 1000ms;
     transition-duration: 1000ms;
   }
-}
 
-.list-group-item-action {
-  color: $primary-color;
-}
-
-.list-group-item a {
-  color: $group-list-title;
-}
-
-.chart_list_tooltip {
-  font-size: 6pt;
-  height: 30px;
-}
-
-.container {
-  background-color: $container-color;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
-  max-width: $max-width;
-  padding-bottom: 25px;
-  padding-top: 20px;
-}
-
-.login_container {
-  background-color: $container-color;
-  border-radius: 5px;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
-}
-
-.footer {
-  text-decoration: none;
-
-  & .links {
-    color: $footer-text-color;
-    text-decoration: none;
-
-    &:hover {
-      color: #8c8c8c;
-    }
+  .list-group-item-action {
+    color: $primary-color;
   }
 
-  & .statping {
-    color: lighten($footer-text-color, 10%);
+  .list-group-item a {
+    color: $group-list-title;
+  }
+
+  .chart_list_tooltip {
+    font-size: 6pt;
+    height: 30px;
+  }
+
+  .container {
+    background-color: $container-color;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    max-width: $max-width;
+    padding-bottom: 25px;
+    padding-top: 20px;
+  }
+
+  .login_container {
+    background-color: $container-color;
+    border-radius: 5px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  }
+
+  .footer {
     text-decoration: none;
 
-    &:hover {
-      color: lighten($footer-text-color, 0%);
+    & .links {
+      color: $footer-text-color;
       text-decoration: none;
+
+      &:hover {
+        color: #8c8c8c;
+      }
+    }
+
+    & .statping {
+      color: lighten($footer-text-color, 10%);
+      text-decoration: none;
+
+      &:hover {
+        color: lighten($footer-text-color, 0%);
+        text-decoration: none;
+      }
     }
   }
-}
 
-.no-select {
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.dates {
-  color: darken($card-background, 45%);
-  font-size: 22px;
-  font-weight: 600;
-  margin: 10px 20px;
-  overflow: auto;
-  padding: 10px 0;
-
-  & div {
-    float: left;
-    position: relative;
-    text-align: center;
-    width: 50%;
+  .no-select {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
   }
-
-  & strong {
-    color: darken($card-background, 20%);
-    display: block;
-    font-size: 20px;
-    font-weight: 700;
+  .pl-2,
+  .px-2 {
+    padding: 0 !important;
   }
+  .mb-2,
+  .my-2 {
+    margin-bottom: 0 !important;
+  }
+  .dates {
+    color: darken($card-background, 45%);
+    font-size: 22px;
+    font-weight: 600;
+    margin: 10px 20px;
+    overflow: auto;
+    padding: 10px 0;
 
-  & span {
-    background: darken($card-background, 10%);
-    height: 60px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 1px;
+    & div {
+      float: left;
+      position: relative;
+      text-align: center;
+      width: 50%;
+    }
+
+    & strong {
+      color: darken($card-background, 20%);
+      display: block;
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    & span {
+      background: darken($card-background, 10%);
+      height: 60px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 1px;
+    }
   }
 }
