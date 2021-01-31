@@ -178,12 +178,12 @@ div.col-md-6.col-sm-12.pl-2.mt-2.mt-md-0.mb-3 {
 
 .list-group-item:hover {
   background-color: #090d13;
-  border: $card-border;
-  min-height: 85pt;
   background-color: darken($container-color, 2%) !important;
+  border: $card-border;
   border-color: darken(#21262d, 2%) !important;
   box-shadow: rgba(0, 0, 0, 0.1) 0 4px 6px 1px;
   color: $text-color;
+  min-height: 85pt;
   -webkit-transition-duration: 1000ms;
   -moz-transition-duration: 1000ms;
   -o-transition-duration: 1000ms;
@@ -218,9 +218,9 @@ div.col-md-6.col-sm-12.pl-2.mt-2.mt-md-0.mb-3 {
 }
 
 .footer {
-  text-decoration: none;
   margin: 0;
   padding: 0;
+  text-decoration: none;
 
   .links {
     color: $footer-text-color;
