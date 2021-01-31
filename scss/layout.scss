@@ -10,7 +10,9 @@ body {
 a {
   color: $text-color;
 }
-
+.description {
+  margin: 0;
+}
 .modal-backdrop {
   background-color: rgba(0, 0, 0, 0.5);
   height: 100%;
@@ -167,6 +169,11 @@ div.col-md-6.col-sm-12.pl-2.mt-2.mt-md-0.mb-3 {
   background-color: #090d13;
   border: $card-border;
   min-height: 85pt;
+}
+
+.mt-2,
+.my-2 {
+  margin-top: 5px !important;
 }
 
 .list-group-item:hover {

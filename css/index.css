@@ -181,18 +181,15 @@ div.col-md-6.col-sm-12.pl-2.mt-2.mt-md-0.mb-3 {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important; }
 
 .footer {
-  text-decoration: none; }
+  text-decoration: none;
+  margin: 0;
+  padding: 0; }
   .footer .links {
     color: #b0b0b0;
     text-decoration: none; }
-    .footer .links:hover {
-      color: #8c8c8c; }
   .footer .statping {
     color: #cacaca;
     text-decoration: none; }
-    .footer .statping:hover {
-      color: #b0b0b0;
-      text-decoration: none; }
 
 .no-select {
   -webkit-touch-callout: none;
@@ -1180,7 +1177,7 @@ col.d-none.d-md-table-cell {
   .navbar-item {
     border-bottom: 1px solid #eaeaea; }
   .nav-link {
-    border: 1px solid 1px solid #21262d;
+    border: 1px solid #21262d;
     color: #d1d5da;
     margin-bottom: 0 !important;
     margin-left: 0;
