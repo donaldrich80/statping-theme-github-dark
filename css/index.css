@@ -479,7 +479,9 @@ h6.text-muted {
   padding-bottom: 30px !important;
   padding-left: 0 !important;
   padding-right: 0 !important;
-  padding-top: 0 !important; }
+  padding-top: 0 !important;
+  flex: 0 0 100%;
+  max-width: 100%; }
 
 .lower_canvas {
   height: 3.4rem;
@@ -1100,7 +1102,8 @@ col.d-none.d-md-table-cell {
   .card-footer {
     background-color: #161b22; }
   .list-group-item {
-    min-height: 0 !important; }
+    min-height: 0 !important;
+    background-color: #0d1117; }
   .card-header {
     background-color: #0d1117;
     border-bottom: 1px solid #21262d;
