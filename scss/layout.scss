@@ -212,24 +212,17 @@ div.col-md-6.col-sm-12.pl-2.mt-2.mt-md-0.mb-3 {
 
 .footer {
   text-decoration: none;
+  margin: 0;
+  padding: 0;
 
-  & .links {
+  .links {
     color: $footer-text-color;
     text-decoration: none;
-
-    &:hover {
-      color: #8c8c8c;
-    }
   }
 
-  & .statping {
+  .statping {
     color: lighten($footer-text-color, 10%);
     text-decoration: none;
-
-    &:hover {
-      color: lighten($footer-text-color, 0%);
-      text-decoration: none;
-    }
   }
 }
 
