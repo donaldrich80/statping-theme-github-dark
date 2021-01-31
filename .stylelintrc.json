@@ -26,14 +26,15 @@
       }
     ],
     "order/properties-alphabetical-order": true,
+    "order/order": true,
     "prettier/prettier": true,
     "csstools/use-nesting": null,
     "no-descending-specificity": null,
-    "max-nesting-depth": 0,
+    "max-nesting-depth": null,
     "font-family-no-missing-generic-family-keyword": null,
     "at-rule-no-unknown": null,
     "no-extra-semicolons": null,
-    "no-duplicate-selectors": true,
+    "no-duplicate-selectors": null,
     "declaration-block-no-shorthand-property-overrides": null
   }
 }

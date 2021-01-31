@@ -22,11 +22,15 @@
       "options": {"parser": "json"}
     },
     {
-      "files": "*.json",
+      "files": "**/*.json",
       "options": {"parser": "json"}
     },
     {
-      "files": "*.yml",
+      "files": "**/*.scss",
+      "options": {"parser": "scss"}
+    },
+    {
+      "files": "**/*.yml",
       "options": {
         "parser": "yaml"
       }
