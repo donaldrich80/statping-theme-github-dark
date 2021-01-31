@@ -52,8 +52,11 @@ title {
 }
 div.row.p-2 {
   font-size: 12px;
-  margin: -5px !important;
+  margin-left: -20px !important;
+  margin-right: -20px !important;
+  margin-bottom: -20px !important;
   padding: 0 !important;
+  text-align: center;
 }
 div.col-md-6.col-sm-12.pl-0.mt-4.mt-md-0.mb-3 {
   display: none !important;
@@ -67,6 +70,8 @@ div.row.stats_area.mb-5 {
   border-bottom: #214a81;
   border-top: #214a81;
   color: #79c0ff;
+  margin-bottom: 10px;
+  padding: 0;
 }
 
 .table thead th {
