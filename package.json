@@ -12,7 +12,7 @@
   },
   "scripts": {
     "stylelint-check": "stylelint-config-prettier-check",
-    "lint-staged": "stylelint . --fix"
+    "lint-staged": "stylelint scss/*.scss --fix"
   },
   "dependencies": {
     "prettier": "^2.2.1",
