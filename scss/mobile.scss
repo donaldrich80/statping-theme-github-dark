@@ -8,25 +8,31 @@
     box-shadow: $mobile-card-shadow;
     padding: $sm-padding;
   }
+
   .tr {
     color: red;
   }
+
   .card-footer {
     background-color: #161b22;
   }
+
   .list-group-item {
     background-color: $container-color;
     min-height: 0 !important;
   }
+
   .card-header {
     background-color: $container-color;
     border-bottom: $card-border;
     color: $white_color;
   }
+
   .card-body {
     font-size: 10pt;
     padding: 10px 10px;
   }
+
   div.col-12.font-2.m-0.mb-2 {
     margin: 0 !important;
     padding: 0 !important;
@@ -40,18 +46,19 @@
     color: orange;
     margin: 5px;
   }
+
   div.col-12 {
     font-size: 0 !important;
     margin: 0 !important;
     padding: 0 !important;
 
     &.no-select {
-      font-size: 0px !important;
+      font-size: 0 !important;
       height: 0 !important;
-
       line-height: 0 !important;
     }
   }
+
   html,
   body {
     background-color: $sm-background-color;
@@ -73,6 +80,7 @@
   .index-chart {
     height: 380px;
   }
+
   .footer {
     margin: 0;
     padding: 0;
@@ -112,6 +120,7 @@
   .navbar-item {
     border-bottom: 1px solid #eaeaea;
   }
+
   .nav-link {
     border: $card-border;
     color: $white-color;
@@ -176,6 +185,7 @@
       padding-right: 0;
     }
   }
+
   .list-group-item {
     border: 0 !important;
 
@@ -193,6 +203,7 @@
       font-size: 0.7rem;
     }
   }
+
   .service-chart-container {
     height: 200px;
   }

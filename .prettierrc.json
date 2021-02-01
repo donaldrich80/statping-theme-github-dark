@@ -7,7 +7,6 @@
   "jsxBracketSameLine": false,
   "jsxSingleQuote": false,
   "printWidth": 80,
-  "proseWrap": "preserve",
   "quoteProps": "as-needed",
   "requirePragma": false,
   "semi": true,
@@ -18,21 +17,21 @@
   "vueIndentScriptAndStyle": false,
   "overrides": [
     {
-      "files": ".prettierrc.json",
-      "options": {"parser": "json"}
-    },
-    {
-      "files": "**/*.json",
-      "options": {"parser": "json"}
-    },
-    {
-      "files": "**/*.scss",
-      "options": {"parser": "scss"}
-    },
-    {
-      "files": "**/*.yml",
+      "files": ["package.json", "package-lock.json", "*.md"],
       "options": {
-        "parser": "yaml"
+        "printWidth": 80,
+        "singleQuote": false,
+        "tabWidth": 2,
+        "trailingComma": "none",
+        "useTabs": false,
+        "proseWrap": "always"
+      }
+    },
+    {
+      "files": [".prettierrc.json", ".stylelintrc.json"],
+      "options": {
+        "proseWrap": "never",
+        "trailingComma": "none"
       }
     }
   ]

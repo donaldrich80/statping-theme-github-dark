@@ -15,9 +15,15 @@
     "stylelint-prettier": "^1.1.2"
   },
   "scripts": {
-    "stylelint-check": "stylelint-config-prettier-check"
+    "lint-staged": "stylelint . --fix",
+    "pre-commit": "pre-commit run -a",
+    "prettier": "prettier .",
+    "prettier-write": "prettier . --write",
+    "pull": "git pull origin master"
   },
   "dependencies": {
+    "prettier": "^2.2.1",
+    "stylelint-prettier": "^1.1.2",
     "stylelint-scss": "^3.18.0",
     "yarn": "^1.22.10"
   }
