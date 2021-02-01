@@ -31,7 +31,8 @@
       "files": [".prettierrc.json", ".stylelintrc.json"],
       "options": {
         "proseWrap": "never",
-        "trailingComma": "none"
+        "trailingComma": "none",
+        "insertPragma": true
       }
     }
   ]

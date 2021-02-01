@@ -17,7 +17,8 @@
   "scripts": {
     "lint-staged": "stylelint . --fix",
     "pre-commit": "pre-commit run -a",
-    "prettier": "prettier ."
+    "prettier": "prettier .",
+    "prettier-write": "prettier . --write"
   },
   "dependencies": {
     "prettier": "^2.2.1",
