@@ -19,16 +19,20 @@
   "overrides": [
     {
       "files": ".prettierrc.json",
-      "options": {"parser": "json"}
+      "options": {
+        "parser": "json"
+      }
     },
     {
       "files": "*.json",
-      "options": {"parser": "json"}
+      "options": {
+        "parser": "json"
+      }
     },
     {
-      "files": "*.yml",
+      "files": "*.scss",
       "options": {
-        "parser": "yaml"
+        "parser": "scss"
       }
     }
   ]
