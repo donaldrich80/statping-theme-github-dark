@@ -215,6 +215,7 @@
       "stroke"
     ],
     "order/properties-alphabetical-order": true,
+    "order/order": true,
     "prettier/prettier": true,
     "no-descending-specificity": null,
     "max-nesting-depth": 8,
