@@ -18,15 +18,13 @@
   "vueIndentScriptAndStyle": false,
   "overrides": [
     {
-      "files": "*.json",
+      "files": ["package.json", "package-lock.json", "*.md"],
       "options": {
-        "parser": "json"
-      }
-    },
-    {
-      "files": "*.scss",
-      "options": {
-        "parser": "scss"
+        "printWidth": 80,
+        "singleQuote": false,
+        "tabWidth": 2,
+        "trailingComma": "none",
+        "useTabs": false
       }
     }
   ]

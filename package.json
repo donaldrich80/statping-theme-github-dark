@@ -5,14 +5,18 @@
     "postcss-sorting": "^6.0.0",
     "prettier": "^2.2.1",
     "stylelint": "^13.9.0",
-    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-idiomatic-order": "^8.1.0",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-recess-order": "^2.3.0",
+    "stylelint-config-recommended-scss": "^4.2.0",
     "stylelint-config-standard": "^20.0.0",
     "stylelint-order": "^4.1.0",
     "stylelint-prettier": "^1.1.2"
   },
   "scripts": {
-    "stylelint-check": "stylelint-config-prettier-check",
-    "lint-staged": "stylelint scss/*.scss --fix"
+    "lint-staged": "stylelint scss/*.scss --fix",
+    "pre-commit": "pre-commit run -a",
+    "prettier": "prettier ."
   },
   "dependencies": {
     "prettier": "^2.2.1",

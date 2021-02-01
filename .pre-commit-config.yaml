@@ -1,8 +1,8 @@
 repos:
-  # - repo: https://github.com/awebdeveloper/pre-commit-stylelint
-  #   rev: 0.0.2
-  #   hooks:
-  #     - id: stylelint
+  - repo: https://github.com/awebdeveloper/pre-commit-stylelint
+    rev: 0.0.2
+    hooks:
+      - id: stylelint
   # - repo: https://github.com/pre-commit/mirrors-csslint
   #   rev: master
   #   hooks:
@@ -17,14 +17,14 @@ repos:
       - id: prettier
         # stages:
         #   - commit
-  # - repo: https://github.com/pre-commit/pre-commit-hooks
-  #   rev: v3.4.0
-  #   hooks:
-  #     - id: check-added-large-files
-  #     - id: check-yaml
-  #     - id: detect-private-key
-  #     - id: end-of-file-fixer
-  #     - id: mixed-line-ending
-  #     - id: trailing-whitespace
-  #     - id: check-json
-  #     - id: pretty-format-json
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v3.4.0
+    hooks:
+      - id: check-added-large-files
+      - id: check-yaml
+      - id: detect-private-key
+      - id: end-of-file-fixer
+      - id: mixed-line-ending
+      - id: trailing-whitespace
+      - id: check-json
+      # - id: pretty-format-json
