@@ -1,8 +1,9 @@
 {
-  "extends": ["stylelint-config-recommended"],
+  "extends": ["stylelint-prettier/recommended"],
   "plugins": ["stylelint-order"],
   "ignoreFiles": ["**/*.gz", "*.json", "*.log"],
   "rules": {
-    "order/properties-alphabetical-order": true
+    "order/properties-alphabetical-order": true,
+    "prettier/prettier": true
   }
 }

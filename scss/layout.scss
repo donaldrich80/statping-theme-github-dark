@@ -10,9 +10,11 @@ body {
 a {
   color: $text-color;
 }
+
 .description {
   margin: 0;
 }
+
 .modal-backdrop {
   background-color: rgba(0, 0, 0, 0.5);
   height: 100%;
@@ -116,6 +118,7 @@ a {
 .form-control {
   border-radius: $global-border-radius;
 }
+
 div.col-md-3.col-sm-12.mb-4.mb-md-0 {
   border: 0 !important;
   border-radius: 0 !important;
@@ -241,14 +244,17 @@ div.col-md-6.col-sm-12.pl-2.mt-2.mt-md-0.mb-3 {
   -ms-user-select: none;
   user-select: none;
 }
+
 .pl-2,
 .px-2 {
   padding: 0 !important;
 }
+
 .mb-2,
 .my-2 {
   margin-bottom: 0 !important;
 }
+
 .dates {
   color: darken($card-background, 45%);
   font-size: 22px;
