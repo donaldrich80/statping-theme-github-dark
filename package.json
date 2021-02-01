@@ -18,7 +18,8 @@
     "lint-staged": "stylelint . --fix",
     "pre-commit": "pre-commit run -a",
     "prettier": "prettier .",
-    "prettier-write": "prettier . --write"
+    "prettier-write": "prettier . --write",
+    "pull": "git pull origin master"
   },
   "dependencies": {
     "prettier": "^2.2.1",
