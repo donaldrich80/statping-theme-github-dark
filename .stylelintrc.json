@@ -17,16 +17,13 @@
   ],
   "ignoreFiles": ["**/*.gz", "*.json"],
   "rules": {
-    "order/properties-order": ["position"],
-    "plugin/rational-order": [
-      true,
-      {
-        "border-in-box-model": false,
-        "empty-line-between-groups": false
-      }
-    ],
+    "order/order": {
+      "type": "at-rule",
+      "name": "media",
+      "parameter": "icon",
+      "hasBlock": true
+    },
     "order/properties-alphabetical-order": true,
-    "order/order": true,
     "prettier/prettier": true,
     "csstools/use-nesting": null,
     "no-descending-specificity": null,
