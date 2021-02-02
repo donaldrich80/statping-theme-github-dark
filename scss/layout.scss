@@ -166,15 +166,17 @@ div.col-12.no-select {
   background-color: blue;
 }
 .list-group-item:hover {
-  background-color: #090c10;
-  border: 1px solid #21262d;
-  border-color: #1d2127 !important;
-  box-shadow: rgba(179, 61, 61, 0.521) 0 4px 6px 1px;
+  background-color: lighten(red, 10%);
+  border-color: lighten($white-color, 2%) !important;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 6px 1px;
+  color: orange;
+  background-color: teal;
   -webkit-transition-duration: 1000ms;
   -moz-transition-duration: 1000ms;
   -o-transition-duration: 1000ms;
   transition-duration: 1000ms;
 }
+
 .list-group-item-action:active {
   color: orange;
   background-color: red;
@@ -198,7 +200,9 @@ div.col-12.no-select {
 div.card.text-black-50.bg-white.mb-3 {
   display: none;
 }
-
+h4.group_header.mb-3.mt-4 {
+  margin: 5px !important;
+}
 div.card.text-black-50.bg-white.mt-3.mb-3 {
   display: none;
 }
@@ -233,7 +237,7 @@ div.col-md-6.col-sm-12.pl-2.mt-2.mt-md-0.mb-3 {
   box-shadow: $status-card-shadow;
   color: $text-color;
   padding: $status-padding;
-  text-shadow: 1px 1px 1px black;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.295);
 
   &:first-child {
     border-top-left-radius: $card-roundness;
@@ -249,17 +253,6 @@ div.col-md-6.col-sm-12.pl-2.mt-2.mt-md-0.mb-3 {
 .mt-2,
 .my-2 {
   margin-top: 5px !important;
-}
-
-.list-group-item:hover {
-  background-color: lighten($container-color, 2%);
-  border-color: lighten($status-card-border, 2%) !important;
-  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 6px 1px;
-
-  -webkit-transition-duration: 1000ms;
-  -moz-transition-duration: 1000ms;
-  -o-transition-duration: 1000ms;
-  transition-duration: 1000ms;
 }
 
 .list-group-item-action {

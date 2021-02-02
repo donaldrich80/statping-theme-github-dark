@@ -189,10 +189,9 @@
   }
   h1#title.col-12.text-center.pt-4.mt-4.mb-3.header-title.font-6 {
     margin: 0 !important;
+    padding: 5px !important;
   }
-  h4.group_header.mb-3.mt-4 {
-    margin: 0 !important;
-  }
+
   .list-group-item {
     background-color: $status-card-background;
     border: $status-card-border;
