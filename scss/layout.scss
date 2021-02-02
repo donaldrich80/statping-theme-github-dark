@@ -169,7 +169,7 @@ div.col-12.no-select {
   background-color: #090c10;
   border: 1px solid #21262d;
   border-color: #1d2127 !important;
-  box-shadow: rgb(0 0 0 / 10%) 0 4px 6px 1px;
+  box-shadow: rgba(179, 61, 61, 0.521) 0 4px 6px 1px;
   -webkit-transition-duration: 1000ms;
   -moz-transition-duration: 1000ms;
   -o-transition-duration: 1000ms;
@@ -193,6 +193,18 @@ div.col-12.no-select {
 .card-title a {
   color: $service-title;
   text-decoration: none;
+}
+
+div.card.text-black-50.bg-white.mb-3 {
+  display: none;
+}
+
+div.card.text-black-50.bg-white.mt-3.mb-3 {
+  display: none;
+}
+
+div.card.text-black-50.bg-white.mt-3 {
+  display: none;
 }
 
 div.col-md-6.col-sm-12.pl-2.mt-2.mt-md-0.mb-3 {
@@ -221,6 +233,7 @@ div.col-md-6.col-sm-12.pl-2.mt-2.mt-md-0.mb-3 {
   box-shadow: $status-card-shadow;
   color: $text-color;
   padding: $status-padding;
+  text-shadow: 1px 1px 1px black;
 
   &:first-child {
     border-top-left-radius: $card-roundness;
@@ -239,9 +252,8 @@ div.col-md-6.col-sm-12.pl-2.mt-2.mt-md-0.mb-3 {
 }
 
 .list-group-item:hover {
-  background-color: darken($container-color, 2%);
-  border: $card-border;
-  border-color: darken(#21262d, 2%) !important;
+  background-color: lighten($container-color, 2%);
+  border-color: lighten($status-card-border, 2%) !important;
   box-shadow: rgba(0, 0, 0, 0.1) 0 4px 6px 1px;
 
   -webkit-transition-duration: 1000ms;
