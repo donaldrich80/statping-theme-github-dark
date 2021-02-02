@@ -189,7 +189,8 @@ div.col-md-6.col-sm-12.pl-2.mt-2.mt-md-0.mb-3 {
 
 .list-group-item {
   background-color: $status-card-background;
-  border: $card-border;
+  border: $status-card-border;
+  box-shadow: $status-card-shadow;
   color: $text-color;
   padding: $status-padding;
 
