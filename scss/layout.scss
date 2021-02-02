@@ -79,11 +79,12 @@ div.row.stats_area.mb-5 {
 }
 
 .day-success {
-  background-color: $input-color !important;
+  background-color: $day-success-background !important;
+  box-shadow: inset 1px 1px 3px 0px rgba(239, 239, 239, 0.65);
 }
 
 .day-success:hover {
-  background-color: lighten($input-color, 2%) !important;
+  background-color: lighten($day-success-background, 10%) !important;
 }
 
 .day-error {
