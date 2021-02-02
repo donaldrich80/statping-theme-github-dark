@@ -28,6 +28,11 @@
     padding: 10px 10px;
   }
 
+  .mb-4,
+  .my-4 {
+    margin-bottom: 0 !important;
+  }
+
   div.col-12.font-2.m-0.mb-2 {
     margin: 0 !important;
     padding: 0 !important;
@@ -88,7 +93,7 @@
   .sm-container {
     background-color: $status-card-background;
     margin-top: 0 !important;
-    padding: 0 !important;
+    padding: 3px !important;
   }
 
   .lower_canvas {
@@ -100,10 +105,10 @@
     font-size: 0.9rem;
   }
 
-  .container {
-    padding: 0 !important;
-    padding-top: 0 !important;
-  }
+  // .container {
+  //   padding: 0 !important;
+  //   padding-top: 0 !important;
+  // }
 
   .group_header {
     margin-left: 15px;

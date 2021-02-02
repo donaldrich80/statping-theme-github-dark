@@ -50,6 +50,10 @@ a {
   padding: 0.5rem 1rem;
 }
 
+div.row.stats_area.mb-5 {
+  padding: 15px;
+}
+
 .text-muted {
   color: lighten($text-color, 30%) !important;
 }
@@ -228,14 +232,6 @@ div.col-md-6.col-sm-12.pl-2.mt-2.mt-md-0.mb-3 {
 .chart_list_tooltip {
   font-size: 6pt;
   height: 30px;
-}
-
-.container {
-  background-color: $container-color;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
-  max-width: $max-width;
-  padding-bottom: 25px;
-  padding-top: 20px;
 }
 
 .login_container {
