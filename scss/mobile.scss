@@ -185,7 +185,8 @@
 
   .list-group-item {
     background-color: $status-card-background;
-    border: 0 !important;
+    border: $status-card-border;
+    box-shadow: $status-card-shadow;
 
     &:first-child {
       border-top-left-radius: $mobile-card-roundness;
@@ -195,6 +196,7 @@
     &:last-child {
       border-bottom-left-radius: $mobile-card-roundness;
       border-bottom-right-radius: $mobile-card-roundness;
+      margin-bottom: 3px;
     }
 
     & p {
