@@ -17,11 +17,6 @@
     background-color: #161b22;
   }
 
-  .list-group-item {
-    background-color: $container-color;
-    min-height: 0 !important;
-  }
-
   .card-header {
     background-color: $container-color;
     border-bottom: $card-border;
@@ -36,10 +31,6 @@
   div.col-12.font-2.m-0.mb-2 {
     margin: 0 !important;
     padding: 0 !important;
-  }
-
-  div.col-md-6.col-sm-12.pl-0.mt-4.mt-md-0.mb-3 {
-    display: none !important;
   }
 
   .test {
@@ -95,6 +86,7 @@
   }
 
   .sm-container {
+    background-color: red;
     margin-top: 0 !important;
     padding: 0 !important;
   }
@@ -190,13 +182,13 @@
     border: 0 !important;
 
     &:first-child {
-      border-top-left-radius: 0;
-      border-top-right-radius: 0;
+      border-top-left-radius: $mobile-card-roundness;
+      border-top-right-radius: $mobile-card-roundness;
     }
 
     &:last-child {
-      border-bottom-left-radius: 0;
-      border-bottom-right-radius: 0;
+      border-bottom-left-radius: $mobile-card-roundness;
+      border-bottom-right-radius: $mobile-card-roundness;
     }
 
     & p {

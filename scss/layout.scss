@@ -169,9 +169,20 @@ div.col-md-6.col-sm-12.pl-2.mt-2.mt-md-0.mb-3 {
 }
 
 .list-group-item {
-  background-color: #090d13;
+  background-color: $container-color;
   border: $card-border;
-  min-height: 85pt;
+  color: $text-color;
+  padding: $status-padding;
+
+  &:first-child {
+    border-top-left-radius: $card-roundness;
+    border-top-right-radius: $card-roundness;
+  }
+
+  &:last-child {
+    border-bottom-left-radius: $card-roundness;
+    border-bottom-right-radius: $card-roundness;
+  }
 }
 
 .mt-2,
@@ -180,13 +191,11 @@ div.col-md-6.col-sm-12.pl-2.mt-2.mt-md-0.mb-3 {
 }
 
 .list-group-item:hover {
-  background-color: #090d13;
-  background-color: darken($container-color, 2%) !important;
+  background-color: darken($container-color, 2%);
   border: $card-border;
   border-color: darken(#21262d, 2%) !important;
   box-shadow: rgba(0, 0, 0, 0.1) 0 4px 6px 1px;
-  color: $text-color;
-  min-height: 85pt;
+
   -webkit-transition-duration: 1000ms;
   -moz-transition-duration: 1000ms;
   -o-transition-duration: 1000ms;
