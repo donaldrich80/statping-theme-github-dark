@@ -51,14 +51,18 @@ title {
   color: #c9ccd0;
 }
 
-div.row.p-2 {
-  font-size: 12px;
-  margin-bottom: -20px !important;
-  margin-left: -20px !important;
-  margin-right: -20px !important;
-  padding: 0 !important;
-  text-align: center;
+.row {
+  margin: 0 !important;
 }
+
+// div.row.p-2 {
+//   font-size: 12px;
+//   margin-bottom: -20px !important;
+//   margin-left: -20px !important;
+//   margin-right: -20px !important;
+//   padding: 0 !important;
+//   text-align: center;
+// }
 
 div.col-md-6.col-sm-12.pl-0.mt-4.mt-md-0.mb-3 {
   display: none !important;
@@ -329,6 +333,7 @@ h6.text-muted {
   padding-left: 0 !important;
   padding-right: 0 !important;
   padding-top: 0 !important;
+  background-color: $container-color;
 }
 
 .lower_canvas {

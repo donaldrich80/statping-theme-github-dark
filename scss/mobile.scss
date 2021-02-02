@@ -2,7 +2,7 @@
 
 @media (max-width: 767px) {
   .card {
-    background-color: $sm-service-background;
+    background-color: $status-card-background;
     border: 0;
     border-radius: 24px;
     box-shadow: $mobile-card-shadow;
@@ -86,7 +86,7 @@
   }
 
   .sm-container {
-    background-color: red;
+    background-color: $status-card-background;
     margin-top: 0 !important;
     padding: 0 !important;
   }
@@ -179,6 +179,7 @@
   }
 
   .list-group-item {
+    background-color: $status-card-background;
     border: 0 !important;
 
     &:first-child {

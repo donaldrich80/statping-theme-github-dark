@@ -59,6 +59,21 @@ a {
   margin-top: 0 !important;
 }
 
+.mb-3,
+.my-3 {
+  margin-top: 0 !important;
+}
+
+.mb-5,
+.my-5 {
+  margin-bottom: 0 !important;
+}
+
+.mt-4,
+.my-4 {
+  margin-top: 0 !important;
+}
+
 .day-success {
   background-color: $input-color !important;
 }
@@ -169,7 +184,7 @@ div.col-md-6.col-sm-12.pl-2.mt-2.mt-md-0.mb-3 {
 }
 
 .list-group-item {
-  background-color: $container-color;
+  background-color: $status-card-background;
   border: $card-border;
   color: $text-color;
   padding: $status-padding;
@@ -262,6 +277,10 @@ div.col-md-6.col-sm-12.pl-2.mt-2.mt-md-0.mb-3 {
 .mb-2,
 .my-2 {
   margin-bottom: 0 !important;
+}
+
+div.mb-md-4.mb-4 {
+  display: none !important;
 }
 
 .dates {
