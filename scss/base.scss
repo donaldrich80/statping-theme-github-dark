@@ -290,7 +290,8 @@ h6.text-muted {
 
 .online_list .badge {
   font-size: 8pt;
-  // padding: 5px 7px;
+  box-shadow: $status-badge-shadow;
+  margin: 3px;
 }
 
 .btn-sm {
@@ -601,7 +602,9 @@ h6.text-muted {
 }
 
 .bg-danger {
-  background-color: $danger-color !important;
+  background-color: $danger-color-background !important;
+  border: 1px solid $danger-color-border;
+  color: $danger-color-text;
 }
 
 .btn-secondary {

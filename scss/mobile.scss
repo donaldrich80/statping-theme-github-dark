@@ -81,7 +81,10 @@
     margin: 0;
     padding: 0;
   }
-
+  .d-flex {
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
   .online_list {
     box-shadow: $mobile-card-shadow;
   }
@@ -178,10 +181,23 @@
     }
   }
 
+  .online_list .badge {
+    margin: 2px;
+  }
+  div.row.mt-2 {
+    display: none;
+  }
+  div.col-12.text-center.pt-4.mt-4.mb-3.header-title.font-6 {
+    margin: 0 !important;
+  }
+  h4.group_header.mb-3.mt-4 {
+    margin: 0 !important;
+  }
   .list-group-item {
     background-color: $status-card-background;
     border: $status-card-border;
     box-shadow: $status-card-shadow;
+    padding: $mobile-status-padding;
 
     &:first-child {
       border-top-left-radius: $mobile-card-roundness;

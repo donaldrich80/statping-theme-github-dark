@@ -143,13 +143,41 @@ div.col-md-3.col-sm-12.mb-4.mb-md-0 {
   border-radius: 0 !important;
 }
 
+div.col-12.no-select {
+  padding: 0;
+}
+
 .card {
   background-color: $background-color !important;
   border: $card-border;
 }
-
+.d-flex {
+  padding-top: 3px;
+}
 .card-footer {
   background-color: $background-color;
+}
+
+.list-group-item-action:focus,
+.list-group-item-action:hover {
+  z-index: 1;
+  color: green;
+  text-decoration: none;
+  background-color: blue;
+}
+.list-group-item:hover {
+  background-color: #090c10;
+  border: 1px solid #21262d;
+  border-color: #1d2127 !important;
+  box-shadow: rgb(0 0 0 / 10%) 0 4px 6px 1px;
+  -webkit-transition-duration: 1000ms;
+  -moz-transition-duration: 1000ms;
+  -o-transition-duration: 1000ms;
+  transition-duration: 1000ms;
+}
+.list-group-item-action:active {
+  color: orange;
+  background-color: red;
 }
 
 .card-header {
