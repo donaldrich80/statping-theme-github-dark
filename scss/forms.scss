@@ -3,48 +3,48 @@
 
 .copy-btn {
   position: absolute;
-  right: 0;
   z-index: 995;
+  right: 0;
 
   & button {
+    height: 26px;
+    color: $white-color;
     background-color: $dark-blue;
+    padding: 5px 7px;
     border: 1px solid #a7a7a7;
     border-radius: 4px !important;
-    color: $white-color;
-    font-size: 6pt;
-    height: 26px;
     margin: 6px;
-    padding: 5px 7px;
+    font-size: 6pt;
   }
 }
 
 .form-control {
+  color: $input-color;
   background-color: $input-background;
   border: $card-border;
-  color: $input-color;
 
   &:focus {
+    color: $text-color;
     background-color: lighten($input-background, 4%) !important;
     border: 1px solid $dark-blue;
-    color: $text-color;
   }
 }
 
 .form-control[readonly] {
-  background-color: lighten($background-color, 12%) !important;
   color: lighten($input-color, 30%) !important;
+  background-color: lighten($background-color, 12%) !important;
 }
 
 /* The slider itself */
 .slider {
+  height: 5px; /* Specified height */
+  width: 100%; /* Full-width */
+  outline: none; /* Remove outline */
   -webkit-appearance: none; /* Override default CSS styles */
   appearance: none;
   background: $midnight-color; /* Grey background */
-  height: 5px; /* Specified height */
-  outline: none; /* Remove outline */
   -webkit-transition: 0.2s; /* 0.2 seconds transition on hover */
   transition: opacity 0.2s;
-  width: 100%; /* Full-width */
 }
 
 /* Mouse-over effects */
@@ -54,20 +54,20 @@
 
 /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
 .slider::-webkit-slider-thumb {
+  height: 20px; /* Slider handle height */
+  width: 20px; /* Set a specific slider handle width */
+  border-radius: 50%;
   -webkit-appearance: none; /* Override default look */
   appearance: none;
   background: $white-color; /* Green background */
-  border-radius: 50%;
   cursor: pointer; /* Cursor on hover */
-  height: 20px; /* Slider handle height */
-  width: 20px; /* Set a specific slider handle width */
 }
 
 .slider::-moz-range-thumb {
-  background: $white-color; /* Green background */
-  cursor: pointer; /* Cursor on hover */
   height: 15px; /* Slider handle height */
   width: 15px; /* Set a specific slider handle width */
+  background: $white-color; /* Green background */
+  cursor: pointer; /* Cursor on hover */
 }
 
 .input-group-text {
@@ -78,8 +78,8 @@
 
 .inputTags-field {
   background-color: transparent;
-  border: 0;
   padding-top: 0.13rem;
+  border: 0;
 }
 
 input.inputTags-field:focus {
@@ -87,74 +87,74 @@ input.inputTags-field:focus {
 }
 
 .inputTags-list {
-  background-clip: padding-box;
+  display: block;
+  min-height: calc(2.25rem + 2px);
+  width: 100%;
+  color: #495057;
   background-color: orange;
+  font-weight: 400;
+  padding: 0.2rem 0.35rem;
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
-  color: #495057;
-  display: block;
+  background-clip: padding-box;
   font-size: 1rem;
-  font-weight: 400;
   line-height: 1.5;
-  min-height: calc(2.25rem + 2px);
-  padding: 0.2rem 0.35rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  width: 100%;
 }
 
 .inputTags-item {
-  background-color: teal;
-  border-radius: 4px;
   color: white;
-  font-size: 10pt;
-  margin-right: 5px;
+  background-color: teal;
   padding: 5px 8px;
+  border-radius: 4px;
+  margin-right: 5px;
+  font-size: 10pt;
 
   & .close-item {
-    cursor: pointer;
-    font-size: 13pt;
     font-weight: bold;
     margin-left: 6px;
+    cursor: pointer;
+    font-size: 13pt;
   }
 }
 
 .switch {
-  font-size: 1rem;
   position: relative;
+  font-size: 1rem;
 
   & input {
-    background: none;
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    padding: 0;
     border: 0;
+    background: none;
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
-    height: 1px;
     overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
 
     & + label {
-      border-radius: calc(2.375rem * 0.8);
-      cursor: pointer;
+      position: relative;
       display: inline-block;
       height: calc(2.375rem * 0.8);
-      line-height: calc(2.375rem * 0.8);
       min-width: calc(calc(2.375rem * 0.8) * 2);
+      border-radius: calc(2.375rem * 0.8);
       outline: none;
-      position: relative;
+      cursor: pointer;
+      line-height: calc(2.375rem * 0.8);
       text-indent: calc(calc(calc(2.375rem * 0.8) * 2) + 0.5rem);
       user-select: none;
       vertical-align: middle;
 
       &::before,
       &::after {
+        position: absolute;
+        display: block;
+        width: calc(calc(2.375rem * 0.8) * 2);
         bottom: 0;
         content: "";
-        display: block;
         left: 0;
-        position: absolute;
         top: 0;
-        width: calc(calc(2.375rem * 0.8) * 2);
       }
 
       &::before {
@@ -166,13 +166,13 @@ input.inputTags-field:focus {
       }
 
       &::after {
+        height: calc(calc(2.375rem * 0.8) - calc(2px * 2));
+        width: calc(calc(2.375rem * 0.8) - calc(2px * 2));
         background-color: $white-color;
         border-radius: 50%;
-        height: calc(calc(2.375rem * 0.8) - calc(2px * 2));
         left: 2px;
         top: 2px;
         transition: 0.2s all;
-        width: calc(calc(2.375rem * 0.8) - calc(2px * 2));
       }
     }
   }
@@ -208,8 +208,8 @@ input.inputTags-field:focus {
 
   & input + label {
     height: calc(1.9375rem * 0.8);
-    line-height: calc(1.9375rem * 0.8);
     min-width: calc(calc(1.9375rem * 0.8) * 2);
+    line-height: calc(1.9375rem * 0.8);
     text-indent: calc(calc(calc(1.9375rem * 0.8) * 2) + 0.5rem);
 
     &::before {
@@ -232,8 +232,8 @@ input.inputTags-field:focus {
 
   & input + label {
     height: calc(3rem * 0.8);
-    line-height: calc(3rem * 0.8);
     min-width: calc(calc(3rem * 0.8) * 2);
+    line-height: calc(3rem * 0.8);
     text-indent: calc(calc(calc(3rem * 0.8) * 2) + 0.5rem);
 
     &::before {
@@ -256,37 +256,37 @@ input.inputTags-field:focus {
 }
 
 .CodeMirror {
-  background-color: $midnight-color;
-  background-image: none;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-
-  /* Bootstrap Settings */
-  box-sizing: border-box;
-  color: $white-color;
+  position: relative;
   display: block;
-  font: inherit;
+  height: 80vh;
+  width: 100%;
+  color: $white-color;
+  background-color: $midnight-color;
 
   /* Code Mirror Settings */
   font-family: monospace;
-  font-size: 14px;
-  height: 80vh;
-  line-height: 1.5;
-  margin: 0;
-  overflow: auto;
   padding: 0;
-  position: relative;
+
+  /* Bootstrap Settings */
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 0;
+  background-image: none;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  font: inherit;
+  font-size: 14px;
+  line-height: 1.5;
+  overflow: auto;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
-  width: 100%;
 }
 
 .CodeMirror-focused {
+  outline: 0;
   /* Bootstrap Settings */
   border-color: #66afe9;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
     0 0 8px rgba(102, 175, 233, 0.6);
-  outline: 0;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
 }
 
@@ -309,23 +309,23 @@ input.inputTags-field:focus {
 }
 
 .form-control[readonly] {
+  color: $text-color !important;
   background-color: $midnight-color !important;
   border: 1px solid $minor-border !important;
-  color: $text-color !important;
 }
 
 .drag_icon {
+  display: inline-block;
+  height: 25px;
+  width: 25px;
   color: #b1b1b1;
+  margin-right: 5px;
+  margin-left: -10px;
   cursor: move; /* fallback if grab cursor is unsupported */
   cursor: grab;
   cursor: -moz-grab;
   cursor: -webkit-grab;
-  display: inline-block;
-  height: 25px;
-  margin-left: -10px;
-  margin-right: 5px;
   text-align: center;
-  width: 25px;
 }
 
 /* (Optional) Apply a "closed-hand" cursor during drag operation. */

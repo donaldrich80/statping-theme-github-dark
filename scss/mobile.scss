@@ -27,10 +27,10 @@
 @media (max-width: 767px) {
   .card {
     background-color: $status-background;
+    padding: $sm-padding;
     border: 0;
     border-radius: 24px;
     box-shadow: $mobile-card-shadow;
-    padding: $sm-padding;
   }
 
   .tr {
@@ -42,14 +42,14 @@
   }
 
   .card-header {
+    color: $white_color;
     background-color: $container-color;
     border-bottom: $card-border;
-    color: $white_color;
   }
 
   .card-body {
-    font-size: 10pt;
     padding: 10px 10px;
+    font-size: 10pt;
   }
 
   .mb-4,
@@ -63,13 +63,13 @@
   }
 
   div.col-12 {
-    font-size: 0 !important;
-    margin: 0 !important;
     padding: 0 !important;
+    margin: 0 !important;
+    font-size: 0 !important;
 
     &.no-select {
-      font-size: 0 !important;
       height: 0 !important;
+      font-size: 0 !important;
       line-height: 0 !important;
     }
   }
@@ -97,12 +97,12 @@
   }
 
   .footer {
-    margin: 0;
     padding: 0;
+    margin: 0;
   }
   .d-flex {
-    padding-bottom: 4px;
     padding-top: 4px;
+    padding-bottom: 4px;
   }
   .online_list {
     box-shadow: $mobile-card-shadow;
@@ -112,13 +112,13 @@
     height: 810px;
   }
   div.list-group.online_list.mb-4 {
-    margin: 0 !important;
     padding: 3px;
+    margin: 0 !important;
   }
   .sm-container {
     background-color: $status-background;
-    margin-top: 0 !important;
     padding-bottom: 1rem !important;
+    margin-top: 0 !important;
   }
 
   .lower_canvas {
@@ -140,31 +140,31 @@
   }
 
   .nav-link {
-    border: $card-border;
+    width: 100%;
     color: $white-color;
+    border: $card-border;
+    margin-top: 0;
     margin-bottom: 0 !important;
     margin-left: 0;
-    margin-top: 0;
-    width: 100%;
   }
 
   .nav-link.router-link-exact-active.router-link-active {
+    color: #79c0ff !important;
     background-color: #111d2f !important;
     border-color: #214a81 !important;
-    color: #79c0ff !important;
   }
 
   .navbar {
+    width: 100%;
+    margin-top: 0;
     margin-bottom: 0 !important;
     margin-left: 0;
-    margin-top: 0;
-    width: 100%;
   }
 
   .navbar-collapse {
+    color: $navbar-color !important;
     background-color: $navbar-background !important;
     border-color: $card-border !important;
-    color: $navbar-color !important;
   }
 
   .navbar-toggler {
@@ -181,8 +181,8 @@
   }
 
   .full-col-12 {
-    padding-left: 0;
     padding-right: 0;
+    padding-left: 0;
   }
 
   .lg_number {
@@ -190,12 +190,12 @@
   }
 
   .stats_area {
-    margin-bottom: 1.5rem !important;
     margin-top: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
 
     & .col-4 {
-      padding-left: 0;
       padding-right: 0;
+      padding-left: 0;
     }
   }
 
@@ -209,9 +209,9 @@
 
   .list-group-item {
     background-color: $status-card-background;
+    padding: $mobile-status-padding;
     border: $status-card-border;
     box-shadow: $status-card-shadow;
-    padding: $mobile-status-padding;
 
     &:first-child {
       border-top-left-radius: $mobile-card-roundness;
@@ -229,14 +229,14 @@
   }
 
   h4.group_header.mb-3.mt-4 {
-    background-color: $status-title-background;
-    border-bottom: $status-title-border;
-    border-top: $status-title-border;
-    box-shadow: inset 0px 0px 2px 2px rgba(255, 255, 255, 0.15);
     color: $status-title-color;
-    margin-bottom: $status-group-padding !important;
-    margin-top: $status-group-padding !important;
+    background-color: $status-title-background;
     padding: 3px;
+    border-top: $status-title-border;
+    border-bottom: $status-title-border;
+    margin-top: $status-group-padding !important;
+    margin-bottom: $status-group-padding !important;
+    box-shadow: inset 0px 0px 2px 2px rgba(255, 255, 255, 0.15);
     text-shadow: 0 0 2px black;
   }
 

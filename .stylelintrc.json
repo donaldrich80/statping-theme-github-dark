@@ -10,17 +10,56 @@
     "**/*.gz",
     "*.json",
     "**/*.log",
-    "**/*.txt"
+    "**/*.txt",
+    "**/*.css",
+    "test/*.*"
   ],
   "rules": {
-    "number-leading-zero": true,
     "prettier/prettier": true,
-    "order/order": [
-      "custom-properties",
-      "dollar-variables",
-      "declarations",
-      "at-rules",
-      "rules"
-    ]
+    "order/properties-order": [
+      [
+        "position",
+        "display",
+        "flex-direction",
+        "justify-content",
+        "align-items",
+        "height",
+        "min-height",
+        "max-height",
+        "width",
+        "min-width",
+        "max-width",
+        "color",
+        "background-color",
+        "font-family",
+        "font-weight",
+        "font-style",
+        "padding",
+        "padding-top",
+        "padding-right",
+        "padding-bottom",
+        "padding-left",
+        "box-sizing",
+        "border",
+        "border-top",
+        "border-right",
+        "border-bottom",
+        "border-left",
+        "border-radius",
+        "outline",
+        "margin",
+        "margin-top",
+        "margin-right",
+        "margin-bottom",
+        "margin-left",
+        "z-index",
+        "scroll-behavior"
+      ],
+      {
+        "unspecified": "bottomAlphabetical",
+        "emptyLineBeforeUnspecified": "never"
+      }
+    ],
+    "order/properties-alphabetical-order": null
   }
 }

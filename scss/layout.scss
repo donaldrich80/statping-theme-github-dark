@@ -3,8 +3,8 @@
 
 html,
 body {
-  background-color: $background-color;
   color: $text-color;
+  background-color: $background-color;
 }
 
 a {
@@ -16,13 +16,13 @@ a {
 }
 
 .modal-backdrop {
-  background-color: rgba(0, 0, 0, 0.5);
-  height: 100%;
-  left: 0;
   position: absolute;
-  top: 0;
+  height: 100%;
   width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 1040;
+  left: 0;
+  top: 0;
 }
 
 .modal {
@@ -31,23 +31,23 @@ a {
 }
 
 .modal-body {
-  background-color: $background-color;
-  border: $card-border;
   color: $text-color;
+  background-color: $background-color;
   padding: 0.5rem 1rem;
+  border: $card-border;
 }
 
 .modal-header {
-  background-color: $navbar-background;
   color: $navbar-color;
+  background-color: $navbar-background;
   padding: 0.5rem 1rem;
 }
 
 .modal-footer {
-  background-color: $midnight-color;
-  border: $card-border;
   color: $text-color;
+  background-color: $midnight-color;
   padding: 0.5rem 1rem;
+  border: $card-border;
 }
 
 div.row.stats_area.mb-5 {
@@ -107,21 +107,21 @@ div.col-12.full-col-12 {
 }
 
 .navbar {
-  background-color: $navbar-background;
   color: $navbar-color;
+  background-color: $navbar-background;
   margin-bottom: $page-ud-margins;
 }
 
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
+  color: #79c0ff !important;
   background-color: #111d2f !important;
   border-color: #214a81 !important;
-  color: #79c0ff !important;
 }
 
 .table td {
-  border-top: 1px solid $navbar-background !important;
   color: $text-color;
+  border-top: 1px solid $navbar-background !important;
 }
 
 .nav-pills {
@@ -153,16 +153,16 @@ div.col-12.full-col-12 {
 
 .list-group-item-action:focus,
 .list-group-item-action:hover {
-  background-color: blue;
   // z-index: 1;
   color: green;
+  background-color: blue;
   text-decoration: none;
 }
 .list-group-item:hover {
+  color: orange;
   background-color: darken($status-card-background, 2%) !important;
   border-color: lighten(#214a81, 20%) !important;
   box-shadow: $status-card-hover-shadow;
-  color: orange;
   -webkit-transition-duration: 1000ms;
   -moz-transition-duration: 1000ms;
   -o-transition-duration: 1000ms;
@@ -170,13 +170,13 @@ div.col-12.full-col-12 {
 }
 
 .list-group-item-action:active {
-  background-color: red;
   color: orange;
+  background-color: red;
 }
 
 .card-header {
-  background-color: $navbar-background;
   color: $text-color;
+  background-color: $navbar-background;
 }
 
 .card-body {
@@ -194,28 +194,28 @@ div.card.text-black-50.bg-white.mb-3 {
 }
 
 h1#title.col-12.text-center.pt-4.mt-4.mb-3.header-title.font-6 {
-  background-color: $status-title-background;
-  border-top: $status-title-border;
   color: $status-title-color;
-  margin-bottom: 0 !important;
-  margin-top: $status-title-margin !important;
+  background-color: $status-title-background;
   padding: 0 !important;
   padding-top: $status-title-padding !important;
+  border-top: $status-title-border;
+  margin-top: $status-title-margin !important;
+  margin-bottom: 0 !important;
 }
 
 h5#description.col-12.text-center.mb-5.header-desc.font-3 {
-  background-color: $status-title-background;
-  border-bottom: $status-title-border;
   color: $status-title-color;
-  margin-bottom: $status-title-margin !important;
+  background-color: $status-title-background;
   padding-bottom: $status-title-padding;
+  border-bottom: $status-title-border;
+  margin-bottom: $status-title-margin !important;
 }
 
 h4.group_header.mb-3.mt-4 {
-  border-bottom: $status-title-border;
   color: $status-title-color;
-  flex: 0 0 100%;
   padding: 5px;
+  border-bottom: $status-title-border;
+  flex: 0 0 100%;
 }
 
 div.footer.text-center.mb-4.p-2 {
@@ -250,11 +250,11 @@ div.card.text-black-50.bg-white.mt-3 {
 }
 
 .list-group-item {
+  color: $text-color;
   background-color: $status-card-background;
+  padding: $status-padding;
   border: $status-card-border;
   box-shadow: $status-card-shadow;
-  color: $text-color;
-  padding: $status-padding;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.295);
 
   &:first-child {
@@ -282,8 +282,8 @@ div.card.text-black-50.bg-white.mt-3 {
 }
 
 .chart_list_tooltip {
-  font-size: 6pt;
   height: 30px;
+  font-size: 6pt;
 }
 
 .login_container {
@@ -293,8 +293,8 @@ div.card.text-black-50.bg-white.mt-3 {
 }
 
 .footer {
-  margin: 0;
   padding: 0;
+  margin: 0;
   text-decoration: none;
 
   .links {
@@ -338,32 +338,32 @@ div.mb-md-4.mb-4 {
 
 .dates {
   color: darken($card-background, 45%);
-  font-size: 22px;
   font-weight: 600;
-  margin: 10px 20px;
-  overflow: auto;
   padding: 10px 0;
+  margin: 10px 20px;
+  font-size: 22px;
+  overflow: auto;
 
   & div {
-    float: left;
     position: relative;
-    text-align: center;
     width: 50%;
+    float: left;
+    text-align: center;
   }
 
   & strong {
-    color: darken($card-background, 20%);
     display: block;
-    font-size: 20px;
+    color: darken($card-background, 20%);
     font-weight: 700;
+    font-size: 20px;
   }
 
   & span {
-    background: darken($card-background, 10%);
-    height: 60px;
     position: absolute;
+    height: 60px;
+    width: 1px;
+    background: darken($card-background, 10%);
     right: 0;
     top: 0;
-    width: 1px;
   }
 }
