@@ -1,0 +1,89 @@
+/*    Index Page      */
+$midnight-color: #06090f;
+$background-color: #090d13;
+$temp-color: #090d13;
+$container-color: #0d1117;
+$text-color: #e1e4e8;
+$white-color: #d1d5da;
+$dark-blue: #044289;
+$light-blue: #0366d6;
+$max-width: 1012px;
+$title-color: #c9d1d9;
+$description-color: #c9d1d9;
+$subtitle-color: #c9d1d9;
+
+$group-list-background: $midnight-color;
+$group-list-title: #c9ccd0;
+$navbar-color: #8b949e;
+$navbar-background: #161b22;
+$input-background: $midnight-color;
+$input-prefilled: #484f58;
+$input-color: #8b949e;
+$input-border: 1px solid $white-color;
+$day-success-background: #214a81;
+$day-error-background: #da3633;
+
+$test-background: #5a1615;
+
+/*    Status Container   */
+$card-background: #161b22;
+$card-border: 1px solid #21262d;
+$minor-border: 1px solid #21262d;
+$major-border: 1px solid #30363d;
+$card-shadow: 0 3px 6px 1px rgba(0, 0, 0, 0.08);
+$service-title: #c9ccd0;
+$service-title-size: 1.8rem;
+$service-stats-color: red;
+$service-description-color: #c9ccd0;
+$service-stats-size: 2.3rem;
+$service-card-height: 480px;
+
+/*    Button Colors      */
+$success-color-old: #2d9c42;
+$success-color: #176f2c;
+$success-color-hover: #22863a;
+$danger-color-text: #f85149;
+$danger-color-border: #da3633;
+$danger-color-background: #36191c;
+$danger-color: #da3633;
+$primary-color: #58a6ff;
+
+/*   Footer Settings   */
+$footer-text-color: #b0b0b0;
+$nav-tab-color: #2d9c42;
+$footer-display: block;
+
+/*   Global Settings */
+$global-border-radius: 0.2rem;
+$button-radius: 6px;
+$round-badge: 24px;
+$card-roundness: 1rem;
+
+/*   Mobile Settings   */
+$sm-background-color: #090d13;
+$sm-border-radius: 0;
+$mobile-card-shadow: 0 0 0 rgba(0, 0, 0, 0.08);
+
+/*   Mobile Service Container   */
+$sm-service-background: #0d1117;
+$sm-padding: 0;
+$sm-service-stats-size: 1.5rem;
+$page-ud-margins: 30px;
+
+$status-background: #0d1117;
+$status-card-background: #111d2f;
+$status-card-shadow: inset 1px 1px 3px 0px rgba(0, 0, 0, 0.514);
+$status-badge-shadow: 0px 0px 2px 2px rgba(170, 170, 170, 0.08);
+$status-card-border: 1px solid #214a81;
+$status-card-border-color: #214a81;
+$status-padding: 0.5rem 1rem;
+$status-card-text: #79c0ff;
+$mobile-status-padding: 0.5rem 0.5rem;
+$mobile-card-roundness: 10px;
+$status-card-hover-shadow: inset 0px 0px 3px 0px rgba(0, 0, 255, 0.466);
+$status-title-background: #161b22;
+$status-title-color: #d1d5da;
+$status-title-border: 1px solid #8b949e;
+$status-title-padding: 3px;
+$status-title-margin: 0.5rem;
+$status-group-padding: 6px;

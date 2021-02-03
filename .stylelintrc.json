@@ -3,7 +3,8 @@
     "stylelint-prettier/recommended"
   ],
   "plugins": [
-    "stylelint-order"
+    "stylelint-order",
+    "stylelint-scss"
   ],
   "ignoreFiles": [
     "**/*.gz",
@@ -12,7 +13,14 @@
     "**/*.txt"
   ],
   "rules": {
-    "order/properties-alphabetical-order": true,
-    "prettier/prettier": true
+    "number-leading-zero": true,
+    "prettier/prettier": true,
+    "order/order": [
+      "custom-properties",
+      "dollar-variables",
+      "declarations",
+      "at-rules",
+      "rules"
+    ]
   }
 }

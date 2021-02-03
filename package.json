@@ -16,6 +16,7 @@
   },
   "scripts": {
     "lint-staged": "stylelint . --fix",
+    "stylelint": "stylelint .",
     "pre-commit": "pre-commit run -a",
     "prettier": "prettier .",
     "prettier-write": "prettier . --write",
