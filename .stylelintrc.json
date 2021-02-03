@@ -4,7 +4,7 @@
   ],
   "plugins": [
     "stylelint-order",
-    "stylelint-scss"
+    "stylelint-config-rational-order/plugin"
   ],
   "ignoreFiles": [
     "**/*.gz",
@@ -16,50 +16,18 @@
   ],
   "rules": {
     "prettier/prettier": true,
-    "order/properties-order": [
-      [
-        "position",
-        "display",
-        "flex-direction",
-        "justify-content",
-        "align-items",
-        "height",
-        "min-height",
-        "max-height",
-        "width",
-        "min-width",
-        "max-width",
-        "color",
-        "background-color",
-        "font-family",
-        "font-weight",
-        "font-style",
-        "padding",
-        "padding-top",
-        "padding-right",
-        "padding-bottom",
-        "padding-left",
-        "box-sizing",
-        "border",
-        "border-top",
-        "border-right",
-        "border-bottom",
-        "border-left",
-        "border-radius",
-        "outline",
-        "margin",
-        "margin-top",
-        "margin-right",
-        "margin-bottom",
-        "margin-left",
-        "z-index",
-        "scroll-behavior"
-      ],
-      {
-        "unspecified": "bottomAlphabetical",
-        "emptyLineBeforeUnspecified": "never"
-      }
+    "order/order": [
+      "dollar-variables"
     ],
-    "order/properties-alphabetical-order": null
+    "order/properties-order": [
+      "position"
+    ],
+    "plugin/rational-order": [
+      true,
+      {
+        "border-in-box-model": false,
+        "empty-line-between-groups": false
+      }
+    ]
   }
 }

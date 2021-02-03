@@ -20,14 +20,14 @@ title {
 
 .service-tm-menu {
   position: absolute;
-  height: 355px;
+  bottom: 15px;
+  left: -25px;
   width: 210px;
+  height: 355px;
   background-color: #161b22d4;
   border: 0;
   border-radius: 0;
-  bottom: 15px;
   box-shadow: 0 3px 6px 1px rgba(0, 0, 0, 0.08);
-  left: -25px;
 }
 
 .text-black-50 {
@@ -64,12 +64,12 @@ title {
 }
 
 div.row.stats_area.mb-5 {
+  margin-bottom: 10px;
+  padding: 0;
   color: #79c0ff;
   background-color: #111d2f;
-  padding: 0;
   border-top: #214a81;
   border-bottom: #214a81;
-  margin-bottom: 10px;
 }
 
 .table thead th {
@@ -80,8 +80,8 @@ div.row.stats_area.mb-5 {
 .table td,
 .table th {
   padding: 0.75rem;
-  border: 1px solid $minor-border !important;
   vertical-align: top;
+  border: 1px solid $minor-border !important;
 }
 
 h6.text-muted {
@@ -130,10 +130,10 @@ h6.text-muted {
 }
 
 .backgroundAnimated {
+  background-image: none !important;
   -o-animation: fadeit 1s ease-in-out;
   animation: fadeIt 1s ease-in-out;
   animation-iteration-count: infinite;
-  background-image: none !important;
 }
 
 .loader {
@@ -212,33 +212,33 @@ h6.text-muted {
 }
 
 .divider {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  margin: 0 20px 0 20px;
   flex-grow: 1;
+  margin: 0 20px 0 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .daily-failures {
   position: absolute;
-  height: 25px;
-  width: 300px;
-  padding-top: 3px;
-  right: 100px;
   top: 10px;
+  right: 100px;
+  width: 300px;
+  height: 25px;
+  padding-top: 3px;
 }
 
 .service_day {
-  height: 20px;
   max-width: 30px;
-  border-radius: 2px;
+  height: 20px;
   margin-right: 2px;
+  border-radius: 2px;
   cursor: pointer;
 
   & span {
     display: flex;
     justify-content: center;
-    color: blue;
     margin: auto;
     margin-top: 4px;
+    color: blue;
     font-size: 6pt;
   }
 }
@@ -270,37 +270,37 @@ h6.text-muted {
 
 .btn-group a {
   padding: 0.1rem 0.75rem;
+  font-size: 0.8rem;
   border: $card-border !important;
   border-radius: $global-border-radius;
-  font-size: 0.8rem;
 }
 
 .online_list .badge {
   margin: 3px;
-  box-shadow: $status-badge-shadow;
   font-size: 8pt;
+  box-shadow: $status-badge-shadow;
 }
 
 .btn-sm {
   color: $white-color !important;
-  background-color: $container-color;
-  border: $card-border;
   font-size: 0.75rem;
   line-height: 1.3;
+  background-color: $container-color;
+  border: $card-border;
 }
 
 .view_service_btn {
   position: absolute;
-  bottom: -40px;
   right: 40px;
+  bottom: -40px;
 }
 
 .service_lower_info {
   position: absolute;
-  color: #d1ffca;
   bottom: -40px;
-  font-size: 0.85rem;
   left: 40px;
+  color: #d1ffca;
+  font-size: 0.85rem;
 }
 
 .lg_number {
@@ -316,24 +316,24 @@ h6.text-muted {
 }
 
 .container {
+  flex: 0 0 100%;
   max-width: 100%;
-  background-color: $container-color;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
   padding-top: 0 !important;
   padding-right: 0 !important;
   padding-bottom: $page-ud-margins !important;
   padding-left: 0 !important;
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
+  background-color: $container-color;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
-  flex: 0 0 100%;
 }
 
 .lower_canvas {
-  height: 3.4rem;
   width: 100%;
-  padding: 15px 10px;
+  height: 3.4rem;
   margin-right: 0 !important;
   margin-left: 0 !important;
+  padding: 15px 10px;
 
   & span {
     color: $service-description-color;
@@ -487,8 +487,8 @@ h6.text-muted {
 .braker {
   display: block;
   width: 98%;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
   margin: 0 auto;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .text-dim {
@@ -516,21 +516,21 @@ h6.text-muted {
 
 .chart-container {
   position: relative;
-  height: 240px;
   width: 100%;
+  height: 240px;
   overflow: hidden;
 }
 
 .service-chart-container {
   position: relative;
-  height: 400px;
   width: 100%;
+  height: 400px;
 }
 
 .service-chart-heatmap {
   position: relative;
-  height: 180px;
   width: 100%;
+  height: 180px;
 }
 
 .btn-primary {
@@ -674,21 +674,21 @@ h6.text-muted {
 
 .switch_btn {
   display: block;
-  margin: -1px 0 0 0;
   float: right;
+  margin: -1px 0 0 0;
 }
 
 #start_container {
   position: absolute;
-  margin-top: 20px;
   z-index: 99999;
+  margin-top: 20px;
 }
 
 #end_container {
   position: absolute;
-  margin-top: 20px;
-  z-index: 99999;
   right: 0;
+  z-index: 99999;
+  margin-top: 20px;
 }
 
 .pointer {
@@ -700,23 +700,23 @@ h6.text-muted {
 }
 
 .toggle-service {
-  margin: 2px 3px 0 0;
-  cursor: pointer;
   float: left;
+  margin: 2px 3px 0 0;
   font-size: 18pt;
+  cursor: pointer;
 }
 
 /* Enter and leave animations can use different */
 
 .slide-fade-enter-active {
-  opacity: 0;
   transform: translateX(10px);
+  opacity: 0;
   transition: all 0.5s ease;
 }
 
 .slide-fade-leave-active {
-  opacity: 0;
   transform: translateX(10px);
+  opacity: 0;
   transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
 }
 

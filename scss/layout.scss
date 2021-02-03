@@ -17,36 +17,36 @@ a {
 
 .modal-backdrop {
   position: absolute;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1040;
-  left: 0;
   top: 0;
+  left: 0;
+  z-index: 1040;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .modal {
-  display: block;
   z-index: 999999 !important;
+  display: block;
 }
 
 .modal-body {
+  padding: 0.5rem 1rem;
   color: $text-color;
   background-color: $background-color;
-  padding: 0.5rem 1rem;
   border: $card-border;
 }
 
 .modal-header {
+  padding: 0.5rem 1rem;
   color: $navbar-color;
   background-color: $navbar-background;
-  padding: 0.5rem 1rem;
 }
 
 .modal-footer {
+  padding: 0.5rem 1rem;
   color: $text-color;
   background-color: $midnight-color;
-  padding: 0.5rem 1rem;
   border: $card-border;
 }
 
@@ -107,9 +107,9 @@ div.col-12.full-col-12 {
 }
 
 .navbar {
+  margin-bottom: $page-ud-margins;
   color: $navbar-color;
   background-color: $navbar-background;
-  margin-bottom: $page-ud-margins;
 }
 
 .nav-pills .nav-link.active,
@@ -155,8 +155,8 @@ div.col-12.full-col-12 {
 .list-group-item-action:hover {
   // z-index: 1;
   color: green;
-  background-color: blue;
   text-decoration: none;
+  background-color: blue;
 }
 .list-group-item:hover {
   color: orange;
@@ -180,8 +180,8 @@ div.col-12.full-col-12 {
 }
 
 .card-body {
-  background-color: $background-color;
   overflow: hidden;
+  background-color: $background-color;
 }
 
 .card-title a {
@@ -194,28 +194,28 @@ div.card.text-black-50.bg-white.mb-3 {
 }
 
 h1#title.col-12.text-center.pt-4.mt-4.mb-3.header-title.font-6 {
-  color: $status-title-color;
-  background-color: $status-title-background;
-  padding: 0 !important;
-  padding-top: $status-title-padding !important;
-  border-top: $status-title-border;
   margin-top: $status-title-margin !important;
   margin-bottom: 0 !important;
+  padding: 0 !important;
+  padding-top: $status-title-padding !important;
+  color: $status-title-color;
+  background-color: $status-title-background;
+  border-top: $status-title-border;
 }
 
 h5#description.col-12.text-center.mb-5.header-desc.font-3 {
+  margin-bottom: $status-title-margin !important;
+  padding-bottom: $status-title-padding;
   color: $status-title-color;
   background-color: $status-title-background;
-  padding-bottom: $status-title-padding;
   border-bottom: $status-title-border;
-  margin-bottom: $status-title-margin !important;
 }
 
 h4.group_header.mb-3.mt-4 {
-  color: $status-title-color;
-  padding: 5px;
-  border-bottom: $status-title-border;
   flex: 0 0 100%;
+  padding: 5px;
+  color: $status-title-color;
+  border-bottom: $status-title-border;
 }
 
 div.footer.text-center.mb-4.p-2 {
@@ -250,12 +250,12 @@ div.card.text-black-50.bg-white.mt-3 {
 }
 
 .list-group-item {
-  color: $text-color;
-  background-color: $status-card-background;
   padding: $status-padding;
+  color: $text-color;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.295);
+  background-color: $status-card-background;
   border: $status-card-border;
   box-shadow: $status-card-shadow;
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.295);
 
   &:first-child {
     border-top-left-radius: $card-roundness;
@@ -263,8 +263,8 @@ div.card.text-black-50.bg-white.mt-3 {
   }
 
   &:last-child {
-    border-bottom-left-radius: $card-roundness;
     border-bottom-right-radius: $card-roundness;
+    border-bottom-left-radius: $card-roundness;
   }
 }
 
@@ -293,8 +293,8 @@ div.card.text-black-50.bg-white.mt-3 {
 }
 
 .footer {
-  padding: 0;
   margin: 0;
+  padding: 0;
   text-decoration: none;
 
   .links {
@@ -337,17 +337,17 @@ div.mb-md-4.mb-4 {
 }
 
 .dates {
+  margin: 10px 20px;
+  padding: 10px 0;
+  overflow: auto;
   color: darken($card-background, 45%);
   font-weight: 600;
-  padding: 10px 0;
-  margin: 10px 20px;
   font-size: 22px;
-  overflow: auto;
 
   & div {
     position: relative;
-    width: 50%;
     float: left;
+    width: 50%;
     text-align: center;
   }
 
@@ -360,10 +360,10 @@ div.mb-md-4.mb-4 {
 
   & span {
     position: absolute;
-    height: 60px;
-    width: 1px;
-    background: darken($card-background, 10%);
-    right: 0;
     top: 0;
+    right: 0;
+    width: 1px;
+    height: 60px;
+    background: darken($card-background, 10%);
   }
 }
