@@ -1,8 +1,26 @@
 @import "variables";
 
+@media (min-width: 992px) {
+  div.col-12.full-col-12 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .list-group {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
 @media (max-width: 575.98px) {
   div.d-flex.mt-3 {
-    display: none;
+    display: none !important;
+  }
+  .h4,
+  h4 {
+    font-size: 18px;
+  }
+  .list-group-item {
+    padding: 0.25rem 0.5rem;
   }
 }
 
@@ -98,7 +116,10 @@
   .expanded-service {
     height: 810px;
   }
-
+  list-group.online_list.mb-4 {
+    margin: 0 !important;
+    padding: 3px;
+  }
   .sm-container {
     background-color: $status-background;
     margin-top: 0 !important;
@@ -182,15 +203,12 @@
     }
   }
 
-  .online_list .badge {
-    margin: 2px;
-  }
   div.row.mt-2 {
     display: none;
   }
   h1#title.col-12.text-center.pt-4.mt-4.mb-3.header-title.font-6 {
     margin-top: 3px !important;
-    padding: 5px !important;
+    padding-top: $status-title-padding !important;
   }
 
   .list-group-item {
@@ -216,8 +234,14 @@
   }
 
   h4.group_header.mb-3.mt-4 {
-    padding-bottom: 2px;
+    padding: 3px;
     margin-bottom: 5px !important;
+    text-shadow: 0 0 2px black;
+    box-shadow: inset 0px 0px 2px 2px rgba(255, 255, 255, 0.15);
+    color: $status-title-color;
+    border-bottom: $status-title-border;
+    border-top: $status-title-border;
+    background-color: $status-title-background;
   }
 
   .service-chart-container {
