@@ -1,15 +1,15 @@
 @import "variables";
 
-@media (min-width: 992px) {
-  div.col-12.full-col-12 {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .list-group {
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
-}
+// @media (min-width: 992px) {
+//   div.col-12.full-col-12 {
+//     display: flex;
+//     flex-wrap: wrap;
+//   }
+//   .list-group {
+//     flex: 0 0 50%;
+//     max-width: 50%;
+//   }
+// }
 
 @media (max-width: 575.98px) {
   div.d-flex.mt-3 {
@@ -106,8 +106,8 @@
     padding: 0;
   }
   .d-flex {
-    padding-top: 4px;
     padding-bottom: 4px;
+    padding-top: 4px;
   }
   .online_list {
     box-shadow: $mobile-card-shadow;
@@ -116,13 +116,14 @@
   .expanded-service {
     height: 810px;
   }
-  list-group.online_list.mb-4 {
+  div.list-group.online_list.mb-4 {
     margin: 0 !important;
     padding: 3px;
   }
   .sm-container {
     background-color: $status-background;
     margin-top: 0 !important;
+    padding-bottom: 1rem !important;
   }
 
   .lower_canvas {
@@ -206,10 +207,10 @@
   div.row.mt-2 {
     display: none;
   }
-  h1#title.col-12.text-center.pt-4.mt-4.mb-3.header-title.font-6 {
-    margin-top: 3px !important;
-    padding-top: $status-title-padding !important;
-  }
+  // h1#title.col-12.text-center.pt-4.mt-4.mb-3.header-title.font-6 {
+  //   margin-top: $status-title-margin !important;
+  //   padding-top: $status-title-padding !important;
+  // }
 
   .list-group-item {
     background-color: $status-card-background;
@@ -225,7 +226,6 @@
     &:last-child {
       border-bottom-left-radius: $mobile-card-roundness;
       border-bottom-right-radius: $mobile-card-roundness;
-      margin-bottom: 3px;
     }
 
     & p {
@@ -234,14 +234,15 @@
   }
 
   h4.group_header.mb-3.mt-4 {
-    padding: 3px;
-    margin-bottom: 5px !important;
-    text-shadow: 0 0 2px black;
-    box-shadow: inset 0px 0px 2px 2px rgba(255, 255, 255, 0.15);
-    color: $status-title-color;
+    background-color: $status-title-background;
     border-bottom: $status-title-border;
     border-top: $status-title-border;
-    background-color: $status-title-background;
+    box-shadow: inset 0px 0px 2px 2px rgba(255, 255, 255, 0.15);
+    color: $status-title-color;
+    margin-bottom: $status-group-padding !important;
+    margin-top: $status-group-padding !important;
+    padding: 3px;
+    text-shadow: 0 0 2px black;
   }
 
   .service-chart-container {

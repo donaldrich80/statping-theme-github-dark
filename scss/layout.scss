@@ -55,10 +55,8 @@ div.row.stats_area.mb-5 {
 }
 
 div.col-12.full-col-12 {
-  border-bottom: lightslategrey;
-  border-top: lightslategrey;
   padding: 15px;
-  margin-bottom: 1rem !important;
+  padding-top: 0px;
 }
 
 .mt-3,
@@ -142,11 +140,6 @@ div.col-12.full-col-12 {
   border-radius: $global-border-radius;
 }
 
-div.col-md-3.col-sm-12.mb-4.mb-md-0 {
-  border: 0 !important;
-  border-radius: 0 !important;
-}
-
 div.col-12.no-select {
   padding: 0;
 }
@@ -164,16 +157,16 @@ div.col-12.no-select {
 
 .list-group-item-action:focus,
 .list-group-item-action:hover {
+  background-color: blue;
   // z-index: 1;
   color: green;
   text-decoration: none;
-  background-color: blue;
 }
 .list-group-item:hover {
+  background-color: darken($status-card-background, 2%) !important;
   border-color: lighten(#214a81, 20%) !important;
   box-shadow: $status-card-hover-shadow;
   color: orange;
-  background-color: darken($status-card-background, 2%) !important;
   -webkit-transition-duration: 1000ms;
   -moz-transition-duration: 1000ms;
   -o-transition-duration: 1000ms;
@@ -181,8 +174,8 @@ div.col-12.no-select {
 }
 
 .list-group-item-action:active {
-  color: orange;
   background-color: red;
+  color: orange;
 }
 
 .card-header {
@@ -206,33 +199,34 @@ div.card.text-black-50.bg-white.mb-3 {
 
 h1#title.col-12.text-center.pt-4.mt-4.mb-3.header-title.font-6 {
   background-color: $status-title-background;
-  color: $status-title-color;
   border-top: $status-title-border;
-  padding: 0 !important;
+  color: $status-title-color;
   margin-bottom: 0 !important;
-  margin-top: 5px !important;
+  margin-top: $status-title-margin !important;
+  padding: 0 !important;
+  padding-top: $status-title-padding !important;
 }
 
 h5#description.col-12.text-center.mb-5.header-desc.font-3 {
   background-color: $status-title-background;
-  color: $status-title-color;
   border-bottom: $status-title-border;
+  color: $status-title-color;
+  margin-bottom: $status-title-margin !important;
   padding-bottom: $status-title-padding;
-  margin-bottom: 5px !important;
 }
 
 h4.group_header.mb-3.mt-4 {
-  padding: 5px;
-  color: $status-title-color;
   border-bottom: $status-title-border;
+  color: $status-title-color;
   flex: 0 0 100%;
+  padding: 5px;
 }
 
 div.footer.text-center.mb-4.p-2 {
   display: none;
 }
 
-list-group.online_list.mb-4 {
+div.list-group.online_list.mb-4 {
   margin: 0 !important;
 }
 
@@ -242,11 +236,6 @@ div.card.text-black-50.bg-white.mt-3.mb-3 {
 
 div.card.text-black-50.bg-white.mt-3 {
   display: none;
-}
-
-div.col-md-6.col-sm-12.pl-2.mt-2.mt-md-0.mb-3 {
-  flex: 0 0 100%;
-  max-width: 100%;
 }
 
 .dashboard_card {

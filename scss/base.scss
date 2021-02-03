@@ -68,10 +68,6 @@ title {
 //   text-align: center;
 // }
 
-div.col-md-6.col-sm-12.pl-0.mt-4.mt-md-0.mb-3 {
-  display: none !important;
-}
-
 .dim {
   background-color: #f3f3f3;
 }
@@ -289,8 +285,8 @@ h6.text-muted {
 }
 
 .online_list .badge {
-  font-size: 8pt;
   box-shadow: $status-badge-shadow;
+  font-size: 8pt;
   margin: 3px;
 }
 
@@ -329,6 +325,7 @@ h6.text-muted {
 }
 
 .container {
+  background-color: $container-color;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
   flex: 0 0 100%;
   margin-bottom: 0 !important;
@@ -338,7 +335,6 @@ h6.text-muted {
   padding-left: 0 !important;
   padding-right: 0 !important;
   padding-top: 0 !important;
-  background-color: $container-color;
 }
 
 .lower_canvas {
@@ -363,8 +359,8 @@ h6.text-muted {
 }
 
 .font-2 {
-  font-size: 0.8rem;
   color: $primary-color !important;
+  font-size: 0.8rem;
 }
 
 .font-3 {
