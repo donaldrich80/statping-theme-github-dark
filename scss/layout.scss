@@ -54,6 +54,12 @@ div.row.stats_area.mb-5 {
   padding: 15px;
 }
 
+div.col-12.full-col-12 {
+  border-bottom: lightslategrey;
+  border-top: lightslategrey;
+  padding: 15px;
+}
+
 .mt-3,
 .my-3 {
   margin-top: 0 !important;
@@ -76,7 +82,7 @@ div.row.stats_area.mb-5 {
 
 .day-success {
   background-color: $day-success-background !important;
-  box-shadow: inset 1px 1px 3px 0px rgba(239, 239, 239, 0.65);
+  box-shadow: inset 1px 1px 3px 0px rgba(0, 0, 0, 0.5);
 }
 
 .day-success:hover {
@@ -157,16 +163,16 @@ div.col-12.no-select {
 
 .list-group-item-action:focus,
 .list-group-item-action:hover {
-  z-index: 1;
+  // z-index: 1;
   color: green;
   text-decoration: none;
   background-color: blue;
 }
 .list-group-item:hover {
-  // border-color: lighten($white-color, 2%) !important;
-  box-shadow: 1px 2px 3px 0px rgba(243, 8, 8, 0.918);
+  border-color: lighten(#214a81, 20%) !important;
+  box-shadow: $status-card-hover-shadow;
   color: orange;
-  background-color: lighten($status-card-background, 10%) !important;
+  background-color: darken($status-card-background, 2%) !important;
   -webkit-transition-duration: 1000ms;
   -moz-transition-duration: 1000ms;
   -o-transition-duration: 1000ms;
@@ -196,10 +202,25 @@ div.col-12.no-select {
 div.card.text-black-50.bg-white.mb-3 {
   display: none;
 }
-h4.group_header.mb-3.mt-4 {
-  margin: 5px !important;
-  color: $primary-color;
+
+h1#title.col-12.text-center.pt-4.mt-4.mb-3.header-title.font-6 {
+  background-color: $status-title-background;
+  color: $status-title-color;
+  border-top: $status-title-border;
+  border-bottom: $status-title-border;
 }
+
+h4.group_header.mb-3.mt-4 {
+  // margin: 5px !important;
+  color: $primary-color;
+  border-bottom: 1px solid $navbar-color;
+  padding-bottom: 0.5rem;
+}
+
+list-group.online_list.mb-4 {
+  margin: 0 !important;
+}
+
 div.card.text-black-50.bg-white.mt-3.mb-3 {
   display: none;
 }

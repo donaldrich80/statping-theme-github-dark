@@ -1,5 +1,11 @@
 @import "variables";
 
+@media (max-width: 575.98px) {
+  div.d-flex.mt-3 {
+    display: none;
+  }
+}
+
 @media (max-width: 767px) {
   .card {
     background-color: $status-background;
@@ -96,7 +102,6 @@
   .sm-container {
     background-color: $status-background;
     margin-top: 0 !important;
-    padding: 3px !important;
   }
 
   .lower_canvas {
@@ -112,10 +117,6 @@
   //   padding: 0 !important;
   //   padding-top: 0 !important;
   // }
-
-  .group_header {
-    margin-left: 15px;
-  }
 
   .navbar-item {
     border-bottom: 1px solid #eaeaea;
@@ -188,7 +189,7 @@
     display: none;
   }
   h1#title.col-12.text-center.pt-4.mt-4.mb-3.header-title.font-6 {
-    margin: 0 !important;
+    margin-top: 3px !important;
     padding: 5px !important;
   }
 
@@ -212,6 +213,11 @@
     & p {
       font-size: 0.7rem;
     }
+  }
+
+  h4.group_header.mb-3.mt-4 {
+    padding-bottom: 2px;
+    margin-bottom: 5px !important;
   }
 
   .service-chart-container {

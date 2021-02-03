@@ -72,10 +72,15 @@ $page-ud-margins: 30px;
 
 $status-background: #0d1117;
 $status-card-background: #111d2f;
-$status-card-shadow: 1px 2px 3px 0px rgba(167, 38, 38, 0.08);
+$status-card-shadow: inset 1px 1px 3px 0px rgba(0, 0, 0, 0.514);
 $status-badge-shadow: 1px 3px 3px 0px rgba(167, 38, 38, 0.08);
 $status-card-border: 1px solid #214a81;
+$status-card-border-color: #214a81;
 $status-padding: 0.5rem 1rem;
 $status-card-text: #79c0ff;
 $mobile-status-padding: 0.5rem 0.5rem;
 $mobile-card-roundness: 10px;
+$status-card-hover-shadow: inset 0px 0px 3px 0px rgba(0, 0, 255, 0.466);
+$status-title-background: #161b22;
+$status-title-color: #d1d5da;
+$status-title-border: 1px solid #8b949e;
