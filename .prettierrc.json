@@ -17,7 +17,11 @@
   "vueIndentScriptAndStyle": false,
   "overrides": [
     {
-      "files": ["package.json", "package-lock.json", "*.md"],
+      "files": [
+        "package.json",
+        "package-lock.json",
+        "*.md"
+      ],
       "options": {
         "printWidth": 80,
         "singleQuote": false,
@@ -28,10 +32,14 @@
       }
     },
     {
-      "files": [".prettierrc.json", ".stylelintrc.json"],
+      "files": [
+        ".prettierrc.json",
+        ".stylelintrc.json"
+      ],
       "options": {
         "proseWrap": "never",
-        "trailingComma": "none"
+        "trailingComma": "none",
+        "singleQuote": false
       }
     }
   ]

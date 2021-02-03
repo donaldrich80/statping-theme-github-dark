@@ -17,8 +17,15 @@
   "rules": {
     "prettier/prettier": true,
     "order/order": [
-      "dollar-variables"
+      "dollar-variables",
+      "at-variables",
+      "less-mixins",
+      "custom-properties",
+      "declarations",
+      "at-rules",
+      "rules"
     ],
+    "order/properties-alphabetical-order": true,
     "order/properties-order": [
       "position"
     ],
