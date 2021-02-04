@@ -12,15 +12,28 @@
 // }
 
 @media (max-width: 575.98px) {
-  div.d-flex.mt-3 {
-    display: none !important;
-  }
+  // div.d-flex.mt-3 {
+  //   display: none !important;
+  // }
   .h4,
   h4 {
     font-size: 18px;
   }
   .list-group-item {
     padding: 0.25rem 0.5rem;
+  }
+  div.col-12.mt-2 {
+    display: none;
+  }
+  div.daily-failures.small.text-right.text-dim {
+    display: none;
+  }
+  .service_day {
+    border-radius: 2px;
+    cursor: pointer;
+    height: 10px;
+    margin-right: 2px;
+    max-width: 30px;
   }
 }
 
@@ -93,9 +106,9 @@
     border-top: 1px solid #090d13;
   }
 
-  .index-chart {
-    height: 380px;
-  }
+  // .index-chart {
+  //   height: 380px;
+  // }
 
   .footer {
     margin: 0;
@@ -239,9 +252,16 @@
     margin-bottom: $status-group-padding !important;
     margin-top: $status-group-padding !important;
     padding: 3px;
+    text-align: center;
     text-shadow: 0 0 2px black;
   }
-
+  .day-success {
+    box-shadow: none;
+  }
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
   .service-chart-container {
     height: 200px;
   }

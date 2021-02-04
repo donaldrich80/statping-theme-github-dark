@@ -8,14 +8,16 @@ title {
 }
 
 .index-chart {
-  height: $service-card-height;
+  display: none;
 
-  /* Animation */
-  -webkit-transition: height 0.3s ease;
-  -moz-transition: height 0.3s ease;
-  -o-transition: height 0.3s ease;
-  -ms-transition: height 0.3s ease;
-  transition: height 0.3s ease;
+  // height: $service-card-height;
+
+  // /* Animation */
+  // -webkit-transition: height 0.3s ease;
+  // -moz-transition: height 0.3s ease;
+  // -o-transition: height 0.3s ease;
+  // -ms-transition: height 0.3s ease;
+  // transition: height 0.3s ease;
 }
 
 .service-tm-menu {
@@ -96,8 +98,8 @@ h6.text-muted {
 }
 
 .text-danger {
-  background-color: $danger-color-background !important;
-  border: 1px solid $danger-color-border !important;
+  // background-color: $danger-color-background !important;
+  // border: 1px solid $danger-color-border !important;
   color: $danger-color !important;
 }
 
@@ -211,6 +213,10 @@ h6.text-muted {
   margin-bottom: 0;
 }
 
+p.divided {
+  color: $primary-color;
+}
+
 .divider {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   flex-grow: 1;
@@ -219,11 +225,12 @@ h6.text-muted {
 
 .daily-failures {
   height: 25px;
-  padding-top: 3px;
+  color: $primary-color;
+  padding-top: 2px;
   position: absolute;
-  right: 100px;
+  right: 80px;
   top: 10px;
-  width: 300px;
+  width: 350px;
 }
 
 .service_day {
@@ -350,7 +357,6 @@ h6.text-muted {
 }
 
 .font-2 {
-  color: $primary-color !important;
   font-size: 0.8rem;
 }
 
@@ -492,7 +498,11 @@ h6.text-muted {
 }
 
 .text-dim {
-  color: #a0a0a0;
+  color: $subtext-color;
+}
+
+.text-muted {
+  color: $subtext-color !important;
 }
 
 .json-field {
