@@ -1,20 +1,10 @@
 @import "variables";
 
-// @media (min-width: 992px) {
-//   div.col-12.full-col-12 {
-//     display: flex;
-//     flex-wrap: wrap;
-//   }
-//   .list-group {
-//     flex: 0 0 50%;
-//     max-width: 50%;
-//   }
-// }
-
 @media (max-width: 575.98px) {
-  // div.d-flex.mt-3 {
-  //   display: none !important;
-  // }
+  .d-flex {
+    padding-bottom: 0 !important;
+    padding-top: 0 !important;
+  }
   .h4,
   h4 {
     font-size: 18px;
@@ -29,10 +19,10 @@
     display: none;
   }
   .service_day {
-    border-radius: 2px;
+    border-radius: 1px;
     cursor: pointer;
-    height: 10px;
-    margin-right: 2px;
+    height: 8px;
+    margin-right: 1px;
     max-width: 30px;
   }
 }

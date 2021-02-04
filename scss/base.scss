@@ -424,40 +424,6 @@ p.divided {
   color: $subtitle-color;
 }
 
-.badge-secondary {
-  background-color: #111d2f !important;
-  border-color: #214a81 !important;
-  color: #79c0ff !important;
-}
-
-.badge {
-  color: $white-color;
-}
-
-.badge-light {
-  background-color: $midnight-color !important;
-  border: 1px solid $success-color;
-  color: $success-color !important;
-}
-
-.badge-dark {
-  background-color: $midnight-color;
-  border: 1px solid $dark-blue;
-  color: $dark-blue;
-}
-
-.badge-success {
-  background-color: $midnight-color;
-  border: 1px solid $success-color;
-  border-radius: $round-badge;
-  color: $success-color;
-}
-
-.badge-primary {
-  background-color: #007bff;
-  color: $white-color;
-}
-
 .btn-group {
   height: 25px;
 
