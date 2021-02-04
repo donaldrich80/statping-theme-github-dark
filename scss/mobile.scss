@@ -3,7 +3,10 @@
 @media (max-width: 575.98px) {
   .d-flex {
     padding-bottom: 0 !important;
-    padding-top: 0 !important;
+    padding-top: 3px !important;
+  }
+  .online_list .badge {
+    margin: 1px !important;
   }
   .h4,
   h4 {
@@ -43,7 +46,9 @@
   .card-footer {
     background-color: #161b22;
   }
-
+  div.col-12.full-col-12 {
+    margin-bottom: 0;
+  }
   .card-header {
     background-color: $container-color;
     border-bottom: $card-border;

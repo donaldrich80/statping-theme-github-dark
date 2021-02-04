@@ -7,17 +7,9 @@ title {
   color: #79c0ff !important;
 }
 
-.index-chart {
-  display: none;
-
-  // height: $service-card-height;
-
-  // /* Animation */
-  // -webkit-transition: height 0.3s ease;
-  // -moz-transition: height 0.3s ease;
-  // -o-transition: height 0.3s ease;
-  // -ms-transition: height 0.3s ease;
-  // transition: height 0.3s ease;
+.shadow-sm {
+  color: $primary-color;
+  background-color: $input-prefilled;
 }
 
 .service-tm-menu {
@@ -280,12 +272,6 @@ p.divided {
   border-radius: $global-border-radius;
   font-size: 0.8rem;
   padding: 0.1rem 0.75rem;
-}
-
-.online_list .badge {
-  box-shadow: $status-badge-shadow;
-  font-size: 8pt;
-  margin: 3px;
 }
 
 .btn-sm {

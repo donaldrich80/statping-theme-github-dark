@@ -4,10 +4,6 @@
   color: #79c0ff !important;
 }
 
-.badge {
-  color: $white-color;
-}
-
 .badge-light {
   background-color: $midnight-color !important;
   border: 1px solid $success-color;
@@ -37,4 +33,11 @@
   border: 1px solid $danger-color;
   border-radius: $round-badge;
   color: $danger-color;
+}
+
+.online_list .badge {
+  box-shadow: $status-badge-shadow;
+  font-size: 8pt;
+  margin: 3px;
+  border-radius: $round-badge;
 }
