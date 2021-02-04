@@ -63,15 +63,16 @@
   }
 
   div.col-12 {
-    font-size: 0 !important;
-    margin: 0 !important;
-    padding: 0 !important;
-
     &.no-select {
       font-size: 0 !important;
       height: 0 !important;
       line-height: 0 !important;
     }
+  }
+
+  h5#description.col-12.text-center.mb-5.header-desc.font-3 {
+    margin-left: -0;
+    margin-right: -0;
   }
 
   html,
@@ -118,6 +119,7 @@
   .sm-container {
     background-color: $status-background;
     margin-top: 0 !important;
+    padding: 0;
     padding-bottom: 1rem !important;
   }
 
@@ -202,11 +204,11 @@
   div.row.mt-2 {
     display: none;
   }
-  // h1#title.col-12.text-center.pt-4.mt-4.mb-3.header-title.font-6 {
-  //   margin-top: $status-title-margin !important;
-  //   padding-top: $status-title-padding !important;
-  // }
 
+  h1#title.col-12.text-center.pt-4.mt-4.mb-3.header-title.font-6 {
+    margin-left: 0;
+    margin-right: 0;
+  }
   .list-group-item {
     background-color: $status-card-background;
     border: $status-card-border;

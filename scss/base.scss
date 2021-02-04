@@ -321,11 +321,11 @@ h6.text-muted {
   flex: 0 0 100%;
   margin-bottom: 0 !important;
   margin-top: 0 !important;
-  max-width: 100%;
+  max-width: 1012px;
   padding-bottom: $page-ud-margins !important;
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-  padding-top: 0 !important;
+  // padding-left: 0 !important;
+  // padding-right: 0 !important;
+  // padding-top: 0 !important;
 }
 
 .lower_canvas {
@@ -722,4 +722,7 @@ h6.text-muted {
 
 .navbar-brand {
   color: $primary_color;
+}
+
+div#notifiers_tabs {
 }
